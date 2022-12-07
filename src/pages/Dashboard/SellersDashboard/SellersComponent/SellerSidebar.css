@@ -1,0 +1,117 @@
+#seller {
+    background-color: #0b2239;
+}
+
+#seller .media-menuu-icon > .line {
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#seller .sidenav__close-icon {
+    position: absolute;
+    visibility: visible;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+#seller .user-area .user-area-art {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #112840;
+    background: #BED3EF;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 16px;
+}
+  
+#seller .user-area p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+  
+#seller .sidenav_title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 20px 20px 20px 40px;
+}
+
+#seller .sidenav__list-item {
+    font-size: 0.9rem;
+    line-height: 23px;
+    font-weight: 600;
+    padding: 15px 20px 15px 40px;
+    color: rgba(255, 255, 255, 0.56);
+}
+  
+#seller .sidenav__list-item .sidenav-link {
+    color: rgba(255, 255, 255, 0.56);
+    text-decoration: none!important;
+}
+
+#seller .sidenav__list-item .icon-notification {
+    width: 10px;
+    height: 10px;
+    background-color: #dc4d04;
+    border-radius: 50%;
+    left: 50px;
+}
+  
+#seller .sidenav-link:hover .sidenav__list-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+#seller .sidenav__list-item:hover .sidenav-link {
+    color: #ffffff;
+}
+
+/* switch */
+
+#seller .switch {
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    border-radius:50px;
+    font-size: .85rem;
+    font-weight: 600;
+  }
+
+#seller .switch .switch-lhs {
+    width: 50%;
+    padding: 3px;
+    border-radius:50px;
+    background-color: #0B2239;
+    text-align: center;
+    margin: 0;
+}
+
+#seller .switch .switch-lhs a {
+    color: rgba(255, 255, 255, 0.56);
+}
+
+#seller .switch .switch-lhs a:hover {
+    color: #FFFFFF;
+}
+
+#seller .switch .switch-rhs {
+    width: 50%;
+    padding: 3px;
+    border-radius:50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+#seller .switch .switch-rhs a {
+    color: #282828;
+}

@@ -1,0 +1,293 @@
+.auth {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.auth-lhs {
+    background-image: url(../../assets/img/auth-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.auth .auth-lhs {
+    background-color: #FDF2E7;
+    padding: 20px;
+}
+
+.auth .auth-rhs {
+    background-color: #FFFFFF;
+    padding: 20px 50px;
+}
+
+.auth-rhs-header {
+    padding: 10px 0;
+}
+
+.auth-rhs-header p {
+    font-size: .9rem;
+    margin: 0;
+    align-self: center;
+}
+
+.auth-rhs-header a {
+    color: #282828;
+}
+
+.auth-rhs-header .user-link {
+    color: #DD4F05;
+    font-weight: 600;
+}
+
+.auth-rhs-header a:hover {
+    color: #DD4F05;
+}
+
+.auth-rhs-content {
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.rhs-inner {
+    width: 100%;
+}
+
+.auth-rhs-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 10px;
+}
+.auth-rhs-content h2 span {
+    font-weight: 400;
+}
+
+.auth-rhs-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.auth-rhs-content .phone-v-inst {
+    font-size: .9rem;
+    color: #282828!important;
+}
+
+.auth-rhs-content .phone-v-inst span {
+    font-weight: 600;
+}
+
+.auth-rhs-content  p {
+    font-size: .9rem;
+    color: #5C5C5C;
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.auth-account-wrap {
+    text-decoration: none;
+}
+
+.auth-account {
+    width: 100%;
+    padding:25px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.auth-account h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.auth-account p {
+    font-size: .9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-cta-icon {
+    visibility: hidden;
+    color: #DD4F05;
+}
+
+.auth-user-icon {
+    color:#DD4F05;
+    margin-right: 25px;
+}
+
+.auth-account:hover {
+    border:1px solid #DD4F05;
+    background-color: #FDF2E7;
+}
+
+.auth-account:hover .auth-cta-icon {
+    visibility: visible;
+}
+
+.auth-account:hover .auth-user-icon {
+    color:#DD4F05;
+}
+
+.auth-form {
+    width: 90%;
+    margin-top: 0px;
+}
+
+.auth-form label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.auth-form .form-check-input:checked {
+    background-color: #DD4F05;
+    border-color: #DD4F05;
+}
+
+.auth-form input {
+    font-size: .9rem;
+}
+
+.auth-form .custom-checkbox {
+    height: 14.4px;
+    width: 14.4px;
+    margin-top: 6px;
+}
+
+.auth-form select {
+    font-size: .9rem;
+}
+
+.auth-form textarea {
+    font-size: .9rem;
+}
+
+.auth-form input:focus {
+    border-color: #DD4F05;
+}
+
+.auth-form select:focus {
+    border-color: #DD4F05;
+}
+
+.auth-form textarea:focus {
+    border-color: #DD4F05;
+}
+
+.auth-form button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #DD4F05;
+    border-color: #DD4F05;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.auth-form .user-link-doc {
+    color: #282828;
+    text-decoration: underline;
+}
+
+.auth-form .forgot-pwd {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.auth-form p {
+    font-size: .9rem;
+    margin: 0;
+    padding: 20px 0 0;
+    color: #282828;
+    font-weight: normal;
+}
+
+.auth-form a {
+    color: #DD4F05;
+    font-weight: 600;
+}
+
+.auth-lhs-header {
+    padding: 10px 50px;
+}
+
+.auth .site-logo {
+    width: 100px;
+}
+
+.auth-lhs-content {
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.auth-lhs-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* line-height: 45px; */
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.auth-lhs-content p {
+    margin: 0 0 25px;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.mobile-only {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .mobile-only {
+        visibility: visible;
+    }
+
+    .auth .site-logo {
+        width: 80px;
+    }
+
+    .auth {
+        grid-template-columns: 100% 100%;
+    }
+
+    .auth-rhs-content {
+        width: 100%;
+    }
+
+    .auth-lhs {
+        display: none;
+    }
+
+    .auth .auth-rhs {
+        padding: 20px;
+    }
+
+    .auth-account {
+        padding: 15px;
+    }
+
+    .auth-account h3 {
+        font-size: 1rem;
+    }
+
+    .auth-account p {
+        font-size: .8rem;
+    }
+
+    .auth-form {
+        width: 100%;
+    }
+    
+}

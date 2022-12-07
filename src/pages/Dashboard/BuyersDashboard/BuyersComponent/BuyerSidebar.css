@@ -1,0 +1,118 @@
+#buyer {
+    background-color: #FFFFFF;
+}
+
+  #buyer .media-menuu-icon > .line {
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#buyer.sidenav__close-icon {
+    position: absolute;
+    visibility: visible;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+#buyer .user-area .user-area-art {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #f9f9f9;
+    background: #BED3EF;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 16px;
+}
+  
+#buyer .user-area p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #282828;
+    margin: 0;
+    padding: 0;
+}
+  
+#buyer .sidenav_title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #282828;
+    padding: 20px 20px 20px 40px;
+}
+
+#buyer .sidenav__list-item {
+    font-size: 0.9rem;
+    line-height: 23px;
+    font-weight: 600;
+    padding: 15px 20px 15px 40px;
+    color: rgba(0, 0, 0, 0.56);
+}
+  
+#buyer .sidenav__list-item .sidenav-link {
+    color: rgba(0, 0, 0, 0.56);
+    text-decoration: none!important;
+}
+
+#buyer .sidenav__list-item .icon-notification {
+    width: 10px;
+    height: 10px;
+    background-color: #0064E5;
+    border-radius: 50%;
+    left: 50px;
+}
+  
+#buyer .sidenav-link:hover .sidenav__list-item {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #282828;
+    cursor: pointer;
+}
+  
+#buyer .sidenav__list-item:hover .sidenav-link {
+    color: #282828;
+}
+
+/* switch */
+
+#buyer .switch {
+    border: 1px solid #0B2239;
+    border-radius:50px;
+    font-size: .85rem;
+    font-weight: 600;
+  }
+
+#buyer .switch .switch-lhs {
+    width: 50%;
+    padding: 3px;
+    border-radius:50px;
+    background-color: #0B2239;
+    text-align: center;
+    margin: 0;
+  }
+
+#buyer .switch .switch-lhs a {
+    color: #FFFFFF;
+}
+
+#buyer .switch .switch-rhs {
+    width: 50%;
+    padding: 3px;
+    border-radius:50px;
+    background-color: #FFFFFF;
+    
+    text-align: center;
+    margin: 0;
+  }
+
+#buyer .switch .switch-rhs a {
+    color: rgba(0, 0, 0, 0.56);
+}
+
+#buyer .switch .switch-rhs a:hover {
+    color: #282828;
+}

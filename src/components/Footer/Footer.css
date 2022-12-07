@@ -1,0 +1,51 @@
+footer {
+    padding: 50px 0 0;
+    background-color: #1A1A1A;
+}
+
+.footer-btm {
+    padding: 15px 0;
+    background-color: #000000;
+}
+
+.fb-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fb-wrap p {
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+    color: #FFFFFF;
+    opacity: .6;
+}
+
+.fb-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+.fb-wrap ul li {
+    display: inline-block;
+    padding: 0;
+    padding-left: 25px;
+    font-size: .8rem;
+}
+
+.fb-wrap ul li a {
+    color: #FFFFFF;
+    opacity: .6;
+}
+
+.fb-wrap ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (width < 768px)  {
+    .fb-wrap ul {
+        display: none;
+    }
+}
