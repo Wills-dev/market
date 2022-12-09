@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
 import SellersSidebar from "./SellersComponent/SellersSidebar";
 
+
 const SellersOrder = () => {
   return (
     <>
       <div className="grid-container">
         <header className="header">
           <div className="header__message">
-            <h2>Hello Erhun Abbe</h2>
+            <h2>My Orders</h2>
           </div>
           <div className="header__search">
             <form>
@@ -44,12 +45,14 @@ const SellersOrder = () => {
         <SellersSidebar />
 
         <main className="main">
-          <h1 className="section-title">Activity Summary</h1>
+         
           <div className="main-overview">
             <div className="overview-card">
               <div>
-                <h2>Total Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <h2>New Orders</h2>
+                <p className="order-p">
+                  Detailed transaction history is on the order page
+                </p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>10</h3>
                 </div>
@@ -57,8 +60,10 @@ const SellersOrder = () => {
             </div>
             <div className="overview-card">
               <div>
-                <h2>Ongoing Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <h2>Pending Orders</h2>
+                <p className="order-p">
+                  Detailed transaction history is on the transactions list
+                </p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>22</h3>
                 </div>
@@ -67,7 +72,10 @@ const SellersOrder = () => {
             <div className="overview-card">
               <div>
                 <h2>Completed Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <p className="order-p">
+                  Detailed transaction history is on the order page
+                  
+                </p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>5</h3>
                 </div>
@@ -79,7 +87,7 @@ const SellersOrder = () => {
           <div className="main-overview">
             <div className="overview-card no-padding">
               <div class="table-responsive">
-              <table class="table table-striped">
+                <table class="table table-striped">
                   <thead>
                     <tr>
                       <th scope="col">Order No</th>
@@ -96,7 +104,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -107,9 +119,7 @@ const SellersOrder = () => {
                       <td>FOB</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-warning">
-                          Pending
-                        </div>
+                        <div className="text-warning">Pending</div>
                       </td>
                     </tr>
                     <tr>
@@ -117,7 +127,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -128,9 +142,7 @@ const SellersOrder = () => {
                       <td>CIF</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-primary">
-                          Processing
-                        </div>
+                        <div className="text-primary">Processing</div>
                       </td>
                     </tr>
                     <tr>
@@ -138,7 +150,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -149,9 +165,7 @@ const SellersOrder = () => {
                       <td>Local Delivery</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Shipped
-                        </div>
+                        <div className="text-success">Shipped</div>
                       </td>
                     </tr>
                     <tr>
@@ -159,7 +173,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -170,9 +188,7 @@ const SellersOrder = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
@@ -180,7 +196,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -191,9 +211,7 @@ const SellersOrder = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
@@ -201,7 +219,11 @@ const SellersOrder = () => {
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -212,9 +234,7 @@ const SellersOrder = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                   </tbody>
