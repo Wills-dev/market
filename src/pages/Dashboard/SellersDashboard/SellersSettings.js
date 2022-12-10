@@ -2,6 +2,8 @@ import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
 import SellersSidebar from "./SellersComponent/SellersSidebar";
+import Avatar from "@mui/material/Avatar";
+import passport from "../../../assets/img/passport.jpg";
 
 const SellersSettings = () => {
   return (
@@ -46,7 +48,158 @@ const SellersSettings = () => {
 
           <main className="main">
             <div className="main-overview">
-              <div className="overview-card"></div>
+              <div className="overview-card">
+                <div className="seller-profile-card">
+                  <div className="seller-profile-pic">
+                    <Avatar
+                      alt="Remy Sharp"
+                      src={passport}
+                      sx={{ width: 100, height: 100 }}
+                    />
+                  </div>
+                  <div className="seller-setting-profile">
+                    <h4>Profile</h4>
+                    <p>Update your profile picture and personal details</p>
+                    <Link to="#">Update your profile</Link>
+                  </div>
+                </div>
+
+                <div className="seller-setting-form">
+                  <form>
+                    <div className="seller-setting-formgroup">
+                      <div className="form-group-right">
+                        <div className="form-group">
+                          <label>Business Name</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="fullname"
+                            placeholder="Erhuan Abhe"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Business type</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="businessname"
+                            placeholder="Fushion & co"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Business Description</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="text"
+                            placeholder=""
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Main Categories</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="text"
+                            placeholder=""
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Total Revenues</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="text"
+                            placeholder=""
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Supply Capacity</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="text"
+                            placeholder=""
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Password</label>
+                          <input
+                            className="form-control"
+                            type="password"
+                            id="text"
+                            placeholder="********"
+                          />
+                        </div>
+                        <div className="seller-seting-submit">
+                          <button type="submit" className="btn btn-primary">
+                            Change Password
+                          </button>
+                          <button type="submit" className="savechabnges-btn">
+                            Save Changes
+                          </button>
+                        </div>
+                      </div>
+                      <div className="form-group-left">
+                        <div className="form-group">
+                          <label>Country</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="country"
+                            placeholder="Nigeria"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Phone Number</label>
+                          <input
+                            className="form-control"
+                            type="number"
+                            id="phonenumber"
+                            placeholder="+234-567-890-123"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>State/Country/Region</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="subscription"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Address</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="subscription"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Year Established</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="subscription"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label>Subscription Info</label>
+                          <textarea
+                            className="form-control"
+                            type="text"
+                            id="subscription"
+                          />
+                        </div>
+                        <div className="seller-seting-joindate">
+                          <p>Joined Since</p>
+                          <p>March 15th 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </main>
         </div>

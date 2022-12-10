@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
 import "../Dashboard.css";
 import SellersSidebar from "./SellersComponent/SellersSidebar";
+import card1 from "../../../assets/img/card1.png"
+import card2 from "../../../assets/img/card2.png";
 
 const SellersDashboard = () => {
   return (
@@ -10,7 +12,7 @@ const SellersDashboard = () => {
       <div className="grid-container">
         <header className="header">
           <div className="header__message">
-            <h2>Hello Erhun Abbe</h2>
+            <h2>Hello Thomas</h2>
           </div>
           <div className="header__search">
             <form>
@@ -47,30 +49,68 @@ const SellersDashboard = () => {
         <main className="main">
           <h1 className="section-title">Activity Summary</h1>
           <div className="main-overview">
-            <div className="overview-card">
+            <div className="overview-card-right">
               <div>
-                <h2>Total Transactions</h2>
+                <h2>Track it all</h2>
                 {/* <p>Detailed transaction history is on the order page</p> */}
                 <div class="d-flex justify-content-between mt-4">
-                  <h3>$125,000</h3>
+                  <p>
+                    Track it all! Keep track of all your RfQ’s and transactions
+                    activities here in your Dashboard
+                  </p>
+                  <img src={card1} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="overview-card-left">
+              <div>
+                <h2>Monitor your Rfq's</h2>
+
+                <div class="d-flex justify-content-between mt-4">
+                  <p>
+                    Keep track of all your RfQ’s and transactions activities
+                    here in your order tab on the dashboard
+                  </p>
+                  <img src={card2} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 className="section-title">Activity Summary</h1>
+          <div className="main-overview">
+            <div className="overview-card">
+              <div>
+                <h2>Total Products</h2>
+                <p>Dashboard history is on the Product page</p>
+                <div class="d-flex justify-content-between mt-4">
+                  <h3>25</h3>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="overview-card">
+              <div>
+                <h2>All Rfq's</h2>
+                <p>Detailed history is on the Rfq's page</p>
+                <div class="d-flex justify-content-between mt-4">
+                  <h3>22</h3>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="overview-card">
               <div>
                 <h2>Total Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
-                <div class="d-flex justify-content-between mt-4">
-                  <h3>22</h3>
-                </div>
-              </div>
-            </div>
-            <div className="overview-card">
-              <div>
-                <h2>Total Quotes</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <p>Detailed history is on the order page</p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>5</h3>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -80,24 +120,26 @@ const SellersDashboard = () => {
           <div className="main-overview">
             <div className="overview-card no-padding">
               <div class="table-responsive">
-              <table class="table table-striped">
+                <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">Order No</th>
                       <th scope="col">Product Info</th>
-                      <th scope="col">Product Cost</th>
-                      <th scope="col">Shipping Terms</th>
-                      <th scope="col">Payment Terms</th>
+                      <th scope="col">Buyer Info</th>
+                      <th scope="col">Shipping Term</th>
+                      <th scope="col">Amount</th>
                       <th scope="col">Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -108,17 +150,18 @@ const SellersDashboard = () => {
                       <td>FOB</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-warning">
-                          Pending
-                        </div>
+                        <div className="text-warning">Pending</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -129,17 +172,18 @@ const SellersDashboard = () => {
                       <td>CIF</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-primary">
-                          Processing
-                        </div>
+                        <div className="text-primary">Processing</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -150,17 +194,18 @@ const SellersDashboard = () => {
                       <td>Local Delivery</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Shipped
-                        </div>
+                        <div className="text-success">Shipped</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -171,17 +216,18 @@ const SellersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -192,17 +238,18 @@ const SellersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -213,9 +260,7 @@ const SellersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                   </tbody>
