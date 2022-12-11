@@ -88,7 +88,7 @@ const SellersSettings = () => {
                         </div>
                         <div className="form-group">
                           <label>Business Description</label>
-                          <input
+                          <textarea
                             className="form-control"
                             type="text"
                             id="text"
@@ -132,10 +132,10 @@ const SellersSettings = () => {
                           />
                         </div>
                         <div className="seller-seting-submit">
-                          <button type="submit" className="btn btn-primary">
+                          <button type="submit" className="btn btn-primary changepassword">
                             Change Password
                           </button>
-                          <button type="submit" className="savechabnges-btn">
+                          <button type="submit" className="btn btn-primary savechanges" >
                             Save Changes
                           </button>
                         </div>
@@ -185,11 +185,11 @@ const SellersSettings = () => {
                         </div>
                         <div className="form-group">
                           <label>Subscription Info</label>
-                          <textarea
-                            className="form-control"
-                            type="text"
-                            id="subscription"
-                          />
+                          <div className="Subscription-info">
+                            <h6>Seller's Premium Plan</h6>
+                            <p>$100/Per Month</p>
+                            <Link to=""><button>Manage</button></Link>
+                          </div>
                         </div>
                         <div className="seller-seting-joindate">
                           <p>Joined Since</p>
