@@ -60,7 +60,7 @@ const SellersSettings = () => {
                   <div className="seller-setting-profile">
                     <h4>Profile</h4>
                     <p>Update your profile picture and personal details</p>
-                    <Link to="#">Update your profile</Link>
+                    <Link to="#"><u>Update Photo</u></Link>
                   </div>
                 </div>
 
@@ -92,6 +92,7 @@ const SellersSettings = () => {
                             className="form-control"
                             type="text"
                             id="text"
+                            cols="20"
                             placeholder=""
                           />
                         </div>
@@ -122,7 +123,7 @@ const SellersSettings = () => {
                             placeholder=""
                           />
                         </div>
-                        <div className="form-group">
+                        <div className="form-group password">
                           <label>Password</label>
                           <input
                             className="form-control"
@@ -131,14 +132,7 @@ const SellersSettings = () => {
                             placeholder="********"
                           />
                         </div>
-                        <div className="seller-seting-submit">
-                          <button type="submit" className="btn btn-primary changepassword">
-                            Change Password
-                          </button>
-                          <button type="submit" className="btn btn-primary savechanges" >
-                            Save Changes
-                          </button>
-                        </div>
+                       
                       </div>
                       <div className="form-group-left">
                         <div className="form-group">
@@ -170,9 +164,10 @@ const SellersSettings = () => {
                         <div className="form-group">
                           <label>Address</label>
                           <input
-                            className="form-control"
+                            className="form-control address"
                             type="text"
-                            id="subscription"
+                            
+                            id="address"
                           />
                         </div>
                         <div className="form-group">
@@ -188,15 +183,26 @@ const SellersSettings = () => {
                           <div className="Subscription-info">
                             <h6>Seller's Premium Plan</h6>
                             <p>$100/Per Month</p>
-                            <Link to=""><button>Manage</button></Link>
+                            <Link to=""><button><u>Manage</u></button></Link>
                           </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div className="seller-footer">
+                        <div className="seller-seting-submit">
+                          <button type="submit" className="btn btn-primary changepassword">
+                            Change Password
+                          </button>
+                          <button type="submit" className="btn btn-primary savechanges" >
+                            Save Changes
+                          </button>
                         </div>
                         <div className="seller-seting-joindate">
                           <p>Joined Since</p>
                           <p>March 15th 2019</p>
                         </div>
                       </div>
-                    </div>
                   </form>
                 </div>
               </div>
