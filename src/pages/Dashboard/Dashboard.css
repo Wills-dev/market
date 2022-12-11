@@ -353,7 +353,8 @@ body {
   width: 178px;
   height: 52px;
   left: 1200px;
-  border: none;
+border: none;
+  border-radius: 4px;
 }
 .card {
   display: flex !important;
@@ -680,31 +681,48 @@ margin: 30px 0;
 .seller-setting-form .form-group{
 	margin: 20px 0;
 }
-.seller-setting-form input{
+.seller-setting-form input,.seller-setting-form textarea {
 	padding: 0px 10px;
-	width: 100%;
+	width: 70%;
 }
 .seller-seting-submit{
 	display: flex;
 
 }
-.seller-seting-submit button{
+.changepassword{
 	margin-right:20px;
-
+  width: 180px;
+  background: #DD4F05 !important;
+  border: none;
 }
-.savechabnges-btn{
-	border: 1px solid rgb(25, 25, 85);
-	background: #fff;
+
+.savechanges{
+	border: 1px solid !important;
+	color: #DD4F05 !important;
+  background-color: #fff !important;
+  width: 180px;
 }
 .seller-seting-joindate{
 	display: flex;
-	padding: 20px;
-	justify-content: space-around;
 }
 .seller-seting-joindate p{
-	font-size: 18px !important;
-	font-weight: bolder !important;
+  font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+margin:50px 70px 0 0;
 }
+.Subscription-info{
+border: 1px solid #0B2239;
+border-radius: 4px;
+padding: 10px;
+width: 70%;
+}
+.Subscription-info button{
+border: none;
+color: #0064E5;
+background: none !important;
+}
+
 .chat-main{
   display: grid;
   grid-template-columns: 1fr 2fr;
