@@ -29,7 +29,8 @@ import SellersProducts from "./pages/Dashboard/SellersDashboard/SellersProducts"
 import SellersNewProduct from "./pages/Dashboard/SellersDashboard/SellersNewProduct";
 import SellersRfqs from "./pages/Dashboard/SellersDashboard/SellersRfqs";
 import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings";
-
+import SellersRfqInfo from "./pages/Dashboard/SellersDashboard/SellersRfqInfo"
+import SellersRfqsQuote from "./pages/Dashboard/SellersDashboard/SellersRfqsQuote"
 
 
 function App() {
@@ -64,6 +65,8 @@ function App() {
           <Route path="/seller/new-product" element={<SellersNewProduct />} />
           <Route path="/seller/rfqs" element={<SellersRfqs />} />
           <Route path="/seller/settings" element={<SellersSettings />} />
+          <Route path="/seller/rfqs-info" element={<SellersRfqInfo />} />
+          <Route path="/seller/rfqs-quote" element={<SellersRfqsQuote />} />
         </Routes>
       </Router>
     </>

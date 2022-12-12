@@ -60,7 +60,9 @@ const SellersSettings = () => {
                   <div className="seller-setting-profile">
                     <h4>Profile</h4>
                     <p>Update your profile picture and personal details</p>
-                    <Link to="#"><u>Update Photo</u></Link>
+                    <Link to="#">
+                      <p>Update Photo</p>
+                    </Link>
                   </div>
                 </div>
 

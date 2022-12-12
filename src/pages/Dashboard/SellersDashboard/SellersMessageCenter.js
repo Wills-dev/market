@@ -18,19 +18,7 @@ import passport from "../../../assets/img/passport.jpg";
 
 const SellersMessageCenter = () => {
 
-  const [listData, setListData] =useState([])
-  async function getData() {
-    try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users');
-      const data = await response.json();
-      console.log(listData)
-      setListData(data);
-     
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  
+
   return (
     <div>
       <div className="grid-container">
@@ -75,20 +63,20 @@ const SellersMessageCenter = () => {
             <div className="main-overview">
               <div className="overview-card-userlist">
                 <form>
-                <div className="messagecenter-search">
-                <Iconly
-                  name="Search"
-                  set="light"
-                  primaryColor="#5C5C5C"
-                  size="medium"
-                />
-                <input
-                  type="text"
-                  className="form-control custom-style"
-                  id=""
-                  placeholder="Search for a message or chat here"
-                />
-              </div>
+                  <div className="messagecenter-search">
+                    <Iconly
+                      name="Search"
+                      set="light"
+                      primaryColor="#5C5C5C"
+                      size="medium"
+                    />
+                    <input
+                      type="text"
+                      className="form-control custom-style"
+                      id=""
+                      placeholder="Search for a message or chat here"
+                    />
+                  </div>
                 </form>
                 <div className="userlist">
                   <div className="userlist-container">
@@ -292,38 +280,53 @@ const SellersMessageCenter = () => {
                  
                   </div>
                 </div>
+                <div className="horizontal-line"></div>
+              
                 <div className="message-dialogue">
                   <div className="sender">
                     <div></div>
-                    <p>Very Random text between tofa supplier 
-                      and supplier trying to conclude a transaction,
-                      Very Random text between tofa sourcepro 
-                    </p>
+                    <div>
+                      <p>Very Random text between tofa supplier 
+                        and supplier trying to conclude a transaction,
+                        Very Random text between tofa sourcepro 
+                      </p>
+                      <span>9:52pm</span>
+                    </div>
+                    
+                    
                   </div>
                   <div className="Reciever">
-                    <p>Very Random text between tofa supplier 
-                      and supplier trying to conclude a transaction,
-                      Very Random text between tofa sourcepro 
-                    </p>
+                    <div>
+                      <p>Very Random text between tofa supplier 
+                        and supplier trying to conclude a transaction,
+                        Very Random text between tofa sourcepro 
+                      </p>
+                      <span>9:52pm</span>
+                    </div>
                     <div></div>
                   </div>
                   <div className="sender">
                     <div></div>
-                    <p>Very Random text between tofa supplier 
-                      and supplier trying to conclude a transaction,
-                      Very Random text between tofa sourcepro 
-                    </p>
+                    <div>
+                      <p>Very Random text between tofa supplier 
+                        and supplier trying to conclude a transaction,
+                        Very Random text between tofa sourcepro 
+                      </p>
+                      <span>9:52pm</span>
+                    </div>
                   </div>
                   <div className="sender">
                     <div></div>
-                    <p>Very Random text between tofa supplier 
-                      and supplier trying to conclude a transaction,
-                      Very Random text between tofa sourcepro 
-                    </p>
+                    <div>
+                      <p>Very Random text between tofa supplier 
+                        and supplier trying to conclude a transaction,
+                        Very Random text between tofa sourcepro 
+                      </p>
+                      <span>9:52pm</span>
+                    </div>
                   </div>
-                  <div className="Reciever">
-                    <p>Start Order
-                    </p>
+                  <div className="start-order">
+                    <button>Start Order </button>
                     <div></div>
                   </div>
                 </div>
