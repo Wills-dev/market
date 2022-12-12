@@ -658,7 +658,7 @@ grid-template-columns: 0.1fr 1fr;
 }
 .seller-setting-profile{
   margin-left:1.5em;
-  margin-top: 1em;
+
 }
 
 .seller-profile-pic img{
@@ -666,10 +666,9 @@ grid-template-columns: 0.1fr 1fr;
 	height: auto;
 }
 .seller-setting-form{
-
 margin: 30px 0;
 }
-.seller-setting-formgroup{
+.seller-setting-formgroup {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 100px;
@@ -681,20 +680,36 @@ margin: 30px 0;
 .seller-setting-form .form-group{
 	margin: 20px 0;
 }
-.seller-setting-form input,.seller-setting-form textarea {
+.seller-setting-form input {
 	padding: 0px 10px;
-	width: 70%;
+	width:292px;
 }
-.seller-seting-submit{
-	display: flex;
+.seller-setting-form textarea {
+	padding: 0px 10px;
+	width:322px;
+}
+.password input{
+  padding: 0px 10px;
+	width:182px;
+}
 
-}
 .changepassword{
 	margin-right:20px;
   width: 180px;
   background: #DD4F05 !important;
   border: none;
 }
+.seller-footer{
+ display: flex;
+justify-content: space-between;
+width: 100%;
+
+ 
+}
+.seller-seting-submit, .seller-seting-joindate{
+  width: 50%;
+}
+
 
 .savechanges{
 	border: 1px solid !important;
@@ -702,20 +717,26 @@ margin: 30px 0;
   background-color: #fff !important;
   width: 180px;
 }
-.seller-seting-joindate{
-	display: flex;
+.address{
+  height: 54px
 }
+
 .seller-seting-joindate p{
   font-weight: 700;
+  color: #1B2631;
 font-size: 14px;
 line-height: 18px;
-margin:50px 70px 0 0;
+margin: 20px 0px 0px 50px;
+
+}
+.seller-seting-joindate{
+  display: flex;
 }
 .Subscription-info{
 border: 1px solid #0B2239;
 border-radius: 4px;
 padding: 10px;
-width: 70%;
+width:188px;
 }
 .Subscription-info button{
 border: none;
@@ -764,6 +785,15 @@ background: none !important;
     visibility: hidden;
   }
 }
+.userlist-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.userlist-message p{
+width: 178px;
+}
 
 /* Medium screens breakpoint (1050px) */
 @media only screen and (min-width: 65.625em) {
@@ -774,7 +804,7 @@ background: none !important;
 
 }
 @media only screen and (max-width: 1024px) {
-		.seller-profile-card{
+	.seller-profile-card{
 display: grid;
 grid-template-columns: 1fr;
 }
@@ -784,4 +814,17 @@ grid-template-columns: 1fr;
 	grid-gap: 50px;
 
 }
-	}
+.seller-footer{
+display: grid; 
+grid-gap:20px;
+ }
+.seller-seting-joindate p{
+
+margin:0 10px;
+
+}
+.seller-seting-submit button{
+  margin:10px;
+
+}
+}

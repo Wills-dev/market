@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
 import SellersSidebar from "./SellersComponent/SellersSidebar";
@@ -7,6 +7,20 @@ import passport from "../../../assets/img/passport.jpg";
 
 
 const SellersMessageCenter = () => {
+
+  const [listData, setListData] =useState([])
+  async function getData() {
+    try {
+      const response = await fetch('https://jsonplaceholder.typicode.com/users');
+      const data = await response.json();
+      console.log(listData)
+      setListData(data);
+     
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
   return (
     <div>
       <div className="grid-container">
@@ -67,12 +81,23 @@ const SellersMessageCenter = () => {
                   </div>
                 </form>
                 <div className="userlist">
-                  <div className="userlist-pic">
+                  <div className="userlist-container">
                     <Avatar
                       alt="Remy Sharp"
                       src={passport}
                       sx={{ width: 100, height: 100 }}
                     />
+
+                    <div className="userlist-info">
+                      <h5>Devani Limited</h5>
+                      <div className="userlist-message">
+                        <p>Have you reviewed...?</p>
+                      </div>
+                      
+                    </div>
+                    <div className="userlist-Time">
+                      <p>9:52</p>
+                    </div>
                   </div>
                 </div>
               </div>
