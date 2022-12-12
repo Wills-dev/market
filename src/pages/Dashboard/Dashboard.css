@@ -658,7 +658,14 @@ grid-template-columns: 0.1fr 1fr;
 }
 .seller-setting-profile{
   margin-left:1.5em;
+  color: #0B2239;
 
+
+
+}
+.seller-setting-profile a{
+  color: #0B2239;
+  text-decoration:underline;
 }
 
 .seller-profile-pic img{
@@ -733,7 +740,7 @@ margin: 20px 0px 0px 50px;
   display: flex;
 }
 .Subscription-info{
-border: 1px solid #0B2239;
+border: 1px solid rgba(11, 34, 57, 0.12);
 border-radius: 4px;
 padding: 10px;
 width:188px;
@@ -763,10 +770,13 @@ background: none !important;
 }
 .message-center-header{
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid;
+  justify-content: space-between; 
+}
+.horizontal-line{
+  border-bottom:  0.5px solid #E4E4E4;
  
-  
+  margin:0 -1.3em;
+ 
 }
 .message-header-status{
   margin-left: 10px;
@@ -793,6 +803,10 @@ justify-content: space-between;
   line-height:17.57px;
   color:#0000;
 }
+.sender span,.Reciever span{
+  margin-left: 82%;
+}
+
 .Reciever p{
   width: 350px;
   padding: 20px;
@@ -805,6 +819,24 @@ justify-content: space-between;
   font-size:14px;
   line-height:17.57px;
   color:#0000;
+}
+.start-order{
+  width:142px;
+  padding: 20px;
+  border: 1px solid;
+  margin:10px 0;
+  background: #F6FAFF;
+  border-radius: 100px;
+  border: none;
+  font-Weight:500;
+  font-size:14px;
+  line-height:17.57px;
+  color:#0000;
+}
+.start-order button{
+  border:none;
+  color: #0B2239;
+  background:none;
 }
 .MessageCenterform-chatmessage{
   width: 100%;
@@ -828,7 +860,7 @@ background: none;
 }
 .messagecenter-search{
   width: 90%;
-  margin: auto;
+  margin:10px auto 20px auto;
   padding: 0 20px;
   background-color: #ffffff;
   display: flex;
@@ -841,6 +873,10 @@ background: none;
 .messagecenter-search input{
   border: none;
   font-size: 0.85rem;
+}
+.header__message button{
+background: none;
+border: none;
 }
 /* Non-mobile styles, 750px breakpoint */
 @media only screen and (min-width: 46.875em) {
@@ -915,7 +951,131 @@ color: rgba(40, 40, 40, 0.71)
 .not-delivered{
   color: #F24E1E;
 }
+.overview-card-buyers-info{
+padding: 30px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0px 4px 20px rgba(11, 34, 57, 0.12);
+}
+.buyer-info-pic{
+  border-bottom:1px solid #DDDDDD;
+  text-align: center;
+}
+.buyer-info{
+  display: flex
+}
+.buyer-info span{
+  margin-right: 40px;
+}
+.buyer-info p{
+  font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+text-transform: capitalize;
 
+}
+.buyer-info h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%; 
+  text-transform: capitalize;
+  
+}
+.buyer-info-details{
+  padding:20px;
+}
+.buyer-info-details h4{
+  margin:30px 0;
+}
+.messagebuyer{
+  margin-top: 30px;
+}
+.messagebuyer button{
+  border: none;
+  background: none;
+  color: #0064E5;
+  text-decoration: underline;
+}
+.messagebuyer span{
+  color: #0064E5;
+}
+.product-info{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(205, 219, 227, 0.1);
+  margin:30px 20px;
+}
+.product-info-title,.product-info-description{
+width: 50%;
+}
+.product-info p,.product-requirement p{
+  margin: 0;
+  font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: #282828;
+}
+.product-requirement{
+  padding:20px 30px;
+  background: rgba(205, 219, 227, 0.1);
+  margin:30px 20px;
+}
+.respond-btn{
+  background: #DD4F05 !important;
+  border-radius: 4px !important;
+  width:140px;
+  border:none !important;
+}
+.quote{
+  margin: 30px 0;
+}
+.product-quote{
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+}
+.modal{
+  left: 4%;
+  border-radius: 12px;
+  top: -2%;
+}
+.modal-body{
+  padding: 0 !important;
+}
+.modal-footer{
+ display: block;
+ padding: 12px 0;
+ border: none;
+}
+.quote-modal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.rfq-details,.supplier-response form{
+  margin: 30px;
+}
+
+.supplier-response{
+  background: #FAFCFF;
+}
+.supplier-product-info{
+  padding: 15px 10px;
+
+}
+.supplier-form-group{
+margin: 40px 0;
+}
+.supplier-form-group label{
+  margin-bottom: 30px;
+}
+.supplier-product-requirement{
+
+  margin:30px 20px;
+  padding: 15px 10px 100px 15px;
+}
 /* Medium screens breakpoint (1050px) */
 @media only screen and (min-width: 65.625em) {
   /* Break out main cards into two columns */
