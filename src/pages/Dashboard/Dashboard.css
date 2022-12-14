@@ -14,6 +14,9 @@ body {
     "main";
   height: 100vh;
 }
+.seller-order-info-container{
+  grid-template-rows: 0px 1fr;  
+}
 
 .menu-icon {
   position: fixed; /* Needs to stay visible for all mobile scrolling */
@@ -874,7 +877,7 @@ background: none;
   border: none;
   font-size: 0.85rem;
 }
-.header__message button{
+.header__message button,.Seller-order-info-header button{
 background: none;
 border: none;
 }
@@ -1038,7 +1041,7 @@ color: #282828;
   padding: 20px;
 }
 .modal{
-  left: 4%;
+  left: 5%;
   border-radius: 12px;
   top: -2%;
 }
@@ -1076,6 +1079,96 @@ margin: 40px 0;
   margin:30px 20px;
   padding: 15px 10px 100px 15px;
 }
+.sellerinfomain{
+  padding:0;
+}
+.Seller-order-info{
+  padding: 25.5px 35px;
+}
+
+.Seller-order-info-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.sellerInfoOrder{
+margin: 0 !important;
+}
+.Seller-order-complete{
+  background: #F5F5F5;
+  padding: 30px 20px;
+}
+.order-complete-title{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+}
+.response-title{
+  display: flex;
+  align-items: center;
+
+}
+.response-title p{ 
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+margin: 0 !important;
+color: #282828;
+}
+.response-border{
+  border-left:1.5px dashed #282828;
+  margin: -8px 15px;
+}
+.response-content{
+  display: flex;
+}
+.response-content p{
+  padding: 20px 0;
+}
+.response-content{
+width: 265px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: rgba(40, 40, 40, 0.85);
+}
+.last{
+  border:none;
+  margin: -13px 15px; 
+}
+.product-info-title-user{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.product-info-title-user button{
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 15px;
+border: none;
+background: none;
+text-decoration-line: underline;
+color: #0064E5 !important;
+}
+.Seller-order-info-completed{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+color: #4AAE4E;
+background: #FFFFFF !important;
+border-radius: 16px;
+padding: 7px 20px;
+
+}
+.product-info-name{
+  margin-right: 30px;
+}
 /* Medium screens breakpoint (1050px) */
 @media only screen and (min-width: 65.625em) {
   /* Break out main cards into two columns */
@@ -1108,4 +1201,18 @@ margin:0 10px;
   margin:10px;
 
 }
+.chat-main {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-column-gap: 0px;
+}
+.sellerInfoOrder {
+  margin: 0 !important;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.product-info p, .response-content p{
+  font-size: 12px;
+}
+
 }
