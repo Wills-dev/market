@@ -25,7 +25,7 @@ const SellersRfqsInfo = () => {
         <header className="header">
           <div className="header__message">
             
-            <h2><button><IoIosArrowBack size={30}/></button>RFQ ID: 12345</h2>
+            <h2><button><IoIosArrowBack size={20}/></button>RFQ ID: 12345</h2>
           </div>
           <div className="header__search">
             <form>
@@ -132,10 +132,11 @@ const SellersRfqsInfo = () => {
                 onHide={handleClose}
                 backdrop="static"
                 centered
-                size="xl"
+                size="lg"
                 keyboard={false}
               >
                <Modal.Body>
+                  <Modal.Header closeButton></Modal.Header>
                     <div className="quote-modal">
                         <div className="rfq-details">
                             <p>RFQ's Detail</p>

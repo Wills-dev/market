@@ -154,11 +154,12 @@ const SellersRfqsQuote = () => {
                 onHide={handleCloseQuote}
                 backdrop="static"
                 centered
-                size="xl"
+                size="lg"
                 keyboard={false}
               >
                
                 <Modal.Body>
+                    <Modal.Header closeButton></Modal.Header>
                     <div className="quote-modal">
                         <div className="rfq-details">
                             <p>RFQ's Detail</p>
