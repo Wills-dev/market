@@ -31,6 +31,7 @@ import SellersRfqs from "./pages/Dashboard/SellersDashboard/SellersRfqs";
 import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings";
 import SellersRfqInfo from "./pages/Dashboard/SellersDashboard/SellersRfqInfo"
 import SellersRfqsQuote from "./pages/Dashboard/SellersDashboard/SellersRfqsQuote"
+import SellersProductDescription from "./pages/Dashboard/SellersDashboard/SellersProductDescription";
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
           <Route path="/seller/settings" element={<SellersSettings />} />
           <Route path="/seller/rfqs-info" element={<SellersRfqInfo />} />
           <Route path="/seller/rfqs-quote" element={<SellersRfqsQuote />} />
+          <Route path="/seller/productdescription" element={<SellersProductDescription />} />
         </Routes>
       </Router>
     </>

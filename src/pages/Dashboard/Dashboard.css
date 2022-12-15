@@ -1169,6 +1169,102 @@ padding: 7px 20px;
 .product-info-name{
   margin-right: 30px;
 }
+.product-description-button-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px;
+}
+.product-description-button{
+  width:35%;
+  display: flex;
+  justify-content: space-between;
+}
+.product-description-button button{
+  padding: 5px 30px;
+}
+.edit-product{
+  background: #DD4F05 !important;
+  border-radius: 4px !important;
+  border: none !important;
+  color: #fff;
+
+}
+.delete-product{
+  
+  border-radius: 4px !important;
+  color: #DD4F05;
+  background-color: #fff;
+  border: 1px solid #DD4F05 !important;
+}
+
+.product-description-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.Product-description-information-listitem{
+  display: flex;
+
+}
+.product-desc-details{
+font-weight: 800 !important;
+font-size: 15px;
+line-height: 19px;
+color: #000000;
+}
+.Product-description-information-listitem p{
+  width: 50%;
+}
+.Product-description-information, .Product-description-specification{
+width: 371px;
+padding: 20px;
+border: 1px solid #DDDDDD;
+border-radius: 10px;
+height:70%;
+}
+.Product-description-image{
+  width: 371px;
+  padding: 20px;
+}
+.Product-description-subimage{
+  display: flex;
+  margin: 20px 0;
+}
+
+.Product-description-mainimage img{
+  width: 100%;
+  height: auto;
+}
+.Product-description-thumbimage img{
+  width: 57px;
+  height: auto;
+  margin: 0px 5px 0px 5px;
+}
+.product-information-description{
+  font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 25px;
+padding: 20px;
+color: #1B2631;
+text-align:justify;
+}
+.product-information-description-text{
+  margin: 20px 0;
+}
+.product-information-description h4,.Product-description-information-container h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 42px;
+  color: #282828;
+  margin: 0 !important;
+
+}
+.product-description-line{
+  border: 0.5px solid green;
+  width: 130px;
+}
 /* Medium screens breakpoint (1050px) */
 @media only screen and (min-width: 65.625em) {
   /* Break out main cards into two columns */
@@ -1213,6 +1309,18 @@ margin:0 10px;
 }
 .product-info p, .response-content p{
   font-size: 12px;
+}
+.product-description-container{
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+}
+.Product-description-information, .Product-description-specification,.Product-description-image{
+
+  width: 100%;
+}
+.Product-description-thumbimage img{
+  width: 80px;
 }
 
 }
