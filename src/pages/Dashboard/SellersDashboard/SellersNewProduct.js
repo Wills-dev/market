@@ -3,6 +3,18 @@ import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
 import SellersSidebar from "./SellersComponent/SellersSidebar";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
+import { MdOutlineLocalPizza } from "react-icons/md";
+import { BsScissors } from "react-icons/bs";
+import { BiPackage } from "react-icons/bi";
+import { MdOutlineMapsHomeWork } from "react-icons/md";
+import { AiOutlineSmile } from "react-icons/ai";
+import { AiOutlineRocket } from "react-icons/ai";
+import { MdOutlineAgriculture } from "react-icons/md";
+import { BsCloudUpload } from "react-icons/bs";
+
+
 import Form from "react-bootstrap/Form";
 
 const SellersNewProducts = () => {
@@ -70,6 +82,7 @@ const SellersNewProducts = () => {
                     <div className="product-row-info productorigin">
                       <label>Country of Origin</label>
                       <Form.Select size="md">
+                        <option></option>
                         <option>
                           <p>Country of origin</p>{" "}
                         </option>
@@ -78,20 +91,26 @@ const SellersNewProducts = () => {
                     <div className="product-row-info productprice">
                       <label>Price</label>
                       <div className="productpricediv">
-                        <p>In USD |</p>
+                        <input placeholder="In Usd" />
                         <p>Metric Tons</p>
+                        <div className="productprice-button">
+                          <button>
+                            <AiOutlinePlus size={8} />
+                          </button>
+                          <button>
+                            <AiOutlineMinus size={8} />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="product-row ">
                     <div className="product-row-info productcapacity">
                       <label>Supply Capacity</label>
-                      <input
-                        className="form-control"
-                        type="text"
-                        id="supply capacity"
-                        placeholder="Purchase Quantity e.g. 100 | Metric ton"
-                      />
+                      <div className="supplycapacitydiv">
+                        <input placeholder="Purchase Quantity e.g. 100" />
+                        <p>Metric Tons</p>
+                      </div>
                     </div>
                     <div className="product-row-info productleadtimemin">
                       <label>Lead Time [Min] </label>
@@ -112,90 +131,151 @@ const SellersNewProducts = () => {
                   </div>
 
                   <div className="product-row">
-                    <div className="product-row-info">
+                    <div className="product-row-info productspecificationcontainer">
                       <label>Product Specification</label>
                       <p>
                         Click on the plus or minus sign to add new types/ values
                       </p>
 
                       <div className="productspecification">
-                        <input
-                          className="form-control"
-                          type="text"
-                          id="type"
-                          placeholder="Type of product"
-                        />
-                        <input
-                          className="form-control"
-                          type="text"
-                          id="value"
-                          placeholder="+ -"
-                        />
+                        <div className="productspecification-type">
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="type"
+                            placeholder="Type of product"
+                          />
+                        </div>
+
+                        <div className="productspecification-value">
+                          <input
+                            className="form-control"
+                            type="text"
+                            id="type"
+                            placeholder="value"
+                          />
+                          <button>
+                            <AiOutlinePlus size={8} />
+                          </button>
+                          <button>
+                            <AiOutlineMinus size={8} />
+                          </button>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="product-row-info">
+                    <div className="product-row-info minimumordercontainer">
                       <label>Minimum Order</label>
                       <p>
                         Click on the plus or minus sign to add new types/ values
                       </p>
-                      <input
-                        className="form-control"
-                        type="text"
-                        id="minimum order"
-                        placeholder="metric tons "
-                      />
+                      <div className="minimum-order">
+                        <div className="productpricediv">
+                          <input />
+                          <p>Metric Tons</p>
+                          <div className="productprice-button">
+                            <button>
+                              <AiOutlinePlus size={8} />
+                            </button>
+                            <button>
+                              <AiOutlineMinus size={8} />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <p>Product Description</p>
+
+                  <label>Product Description</label>
                   <div className="product-info-description">
-                    State the Product description
+                    <textarea
+                      className="form-control"
+                      type="text"
+                      id="text"
+                      cols="20"
+                      placeholder="State the product description"
+                    />
                   </div>
-                </div>
-                <p>Featured Image</p>
-                <p>
-                  You are allowed to upload a maximum of 4 images to display
-                </p>
-                <div className="overview-card image-upload">
-                  <p> Drop Image here</p>
-                  <p>Or Browse Images from your device here</p>
                 </div>
               </div>
 
               <div className="categories">
                 <div className="overview-card categorieslist-container">
                   <div className="categorieslist">
-                    <CgSmartHomeRefrigerator />
-                    <p>Construction Material</p>
+                    <span>
+                      <MdOutlineLocalPizza />
+                    </span>
+                    <p>Food & Beverage</p>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <CgSmartHomeRefrigerator />
-                    <p>Construction Material</p>
+                    <span>
+                      <BsScissors />
+                    </span>
+                    <p>Apparel</p>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <CgSmartHomeRefrigerator />
-                    <p>Construction Material</p>
+                    <span>
+                      <BiPackage />
+                    </span>
+                    <p>Packaging & Supplies</p>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <CgSmartHomeRefrigerator />
-                    <p>Construction Material</p>
+                    <span>
+                      <MdOutlineMapsHomeWork />
+                    </span>
+                    <p>Home & Furniture</p>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <CgSmartHomeRefrigerator />
-                    <p>Construction Material</p>
+                    <span>
+                      <AiOutlineSmile />
+                    </span>
+                    <p>Beauty & Personal Care</p>
+                    <Form.Check aria-label="option 1" />
+                  </div>
+                  <div className="categorieslist">
+                    <span>
+                      <AiOutlineRocket />
+                    </span>
+                    <p>Minerals & Mettalurgy</p>
+                    <Form.Check aria-label="option 1" />
+                  </div>
+                  <div className="categorieslist">
+                    <span>
+                      <MdOutlineAgriculture />
+                    </span>
+                    <p>Agriculture</p>
                     <Form.Check aria-label="option 1" />
                   </div>
                 </div>
-                <p>Sub Categories</p>
+
+                <p className="sub-categories">Sub Categories</p>
+
                 <Form.Select size="sm">
+                  <option></option>
                   <option>Large select</option>
                 </Form.Select>
-
-                <button className="categories-button">Select</button>
+              </div>
+            </div>
+            <div className="categories-footer">
+              <div className="featured-image">
+                <label>Featured Image</label>
+                <p>
+                  You are allowed to upload a maximum of 4 images to display
+                </p>
+                <div className="overview-card image-upload">
+                  <span><BsCloudUpload/></span>
+                  <h6> Drop Image here</h6>
+                  <p>
+                    Or Browse Images from your device<Link to=""> here</Link>{" "}
+                  </p>
+                </div>
+              </div>
+              <div className="categories-footer-button">
+                <button>List New Products</button>
               </div>
             </div>
           </main>

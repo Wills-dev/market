@@ -1020,6 +1020,7 @@ width: 50%;
 font-size: 16px;
 line-height: 150%;
 color: #282828;
+border: none;
 }
 .product-requirement{
   padding:20px 30px;
@@ -1289,8 +1290,8 @@ text-align:justify;
   width: 130px;
 }
 .new-product-container{
-  display: grid;
-  grid-template-columns: 3fr 1.5fr;
+  display: flex;
+
 }
 .new-product{
   margin-bottom: 20px;
@@ -1302,7 +1303,7 @@ justify-content: space-between;
 .product-info-description{
 
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .product-info-description-text{
 font-weight: 500;
@@ -1311,23 +1312,35 @@ line-height: 25px;
 color: #1B2631;
 
 }
+
+.product-info-description textarea{
+  border: none !important;
+}
 .image-upload{
   border: 1px solid grey;
   border-style: dashed;
 }
+.image-upload button{
+  padding:5px 50px !important;
+}
 .categories{
   margin: 80px 20px 30px 20px;
-  border: 1px solid green;
+  width: 30%;
+
 
 }
 .categorieslist-container{
-  border: 1px solid green;
   margin: 0 !important;
 }
 .categorieslist{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
   
+}
+.product-row input::placeholder, .product-row option {
+    font-size: 10px;
 }
 .product-row-info {
   margin: 10px 0;
@@ -1344,10 +1357,10 @@ color: #282828;
 
 }
 .productname{
-  width: 20%;
+  width: 25%;
 }
 .productorigin,.productprice{
-  width: 38%;
+  width: 35%;
 }
 .productleadtimemax,.productleadtimemin{
   width: 28%;
@@ -1363,23 +1376,117 @@ line-height: 23px;
 color: #282828;
 
 }
-.productpricediv{
+.productpricediv, .supplycapacitydiv{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
   border: 1px solid #DDDDDD;
-border-radius: 4px;
-height: 45px;
+  border-radius: 4px;
+  height: 45px;
 }
-.product-row-info p{
-font-style: normal;
-font-size: 8px;
+.productpricediv p{
+  margin: 0 !important;
+  font-weight: 400 !important;
+font-size: 12px !important;
 line-height: 15px;
+color: #000000 !important;
+border-right:1px solid #DDDDDD ;
+padding: 10px;
+
+}
+.supplycapacitydiv p{
+  margin: 0 !important;
+  font-weight: 400 !important;
+font-size: 12px !important;
+line-height: 15px;
+color: #000000 !important;
+padding: 10px;
+
+}
+.productpricediv input,.supplycapacitydiv input{
+width: 30%;
+height: 30px;
+border: none;
+border-right: 1px solid  #DDDDDD;
+
+}
+.supplycapacitydiv input{
+width: 70%;
+height: 30px;
+border: none;
+border-right: 1px solid  #DDDDDD;
+
+}
+.specificationcontainer{
+  display: flex;
+
+}
+.productspecificationcontainer, .minimumordercontainer{
+  width: 48%;
+
+}
+ .productspecification-type{
+  width: 63%;
+ }
+ .productspecification-value{
+  width: 33%;
+ }
+.productspecification-value input,.productspecification-type input{
+  border: none !important;
+
+}
+.productspecification-value, .productspecification-type{
+  display: flex;
+  border: 1px solid #DDDDDD;
+border-radius: 4px;
+
+
+}
+
+.productprice-button button, .productspecification-value button{
+  border: none;
+  background: none;
+}
+.featured-image{
+width: 70%;
+
+}
+.categories-footer-button{
+width: 25%;
+border: none !important;
+margin-left: 30px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+
+
+
+}
+.categories-footer-button button{
+ border: none;
+ width:80%;
+ border: 1px solid green;
+color: #fff;
+ background: #DD4F05 !important;
+border-radius: 4px !important;
+border: none !important;
+padding: 12px 20px;
+}
+.product-row-info p, .featured-image p{
+font-style: normal;
+font-size: 10px;
+line-height: 15px;
+
 color: #5C5C5C;
 }
+
+
 .productspecification{
   display: flex;
+  justify-content: space-between;
+
   
 }
 .product-info-description{
@@ -1390,6 +1497,32 @@ padding: 30px 10px;
 .categories-button{
   position: absolute;
   margin: auto;
+}
+.categories-footer{
+ display: flex;
+
+}
+.image-upload{
+  text-align: center;
+
+}
+.categorieslist p{
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: #5C5C5C;
+margin: 0 !important;
+}
+.sub-categories{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+text-transform: capitalize;
+color: #282828;
+margin-top:20px;
+margin-bottom: 8px !important;
 }
 /* Medium screens breakpoint (1050px) */
 @media only screen and (min-width: 65.625em) {
@@ -1455,5 +1588,16 @@ margin:0 10px;
     padding: 20px;
     margin-top: -10px;
 }
+.new-product-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.new-product,.categories{
+  width: 100%;
+  margin: 0px;
+}
+.categories-footer-button button{
 
+ width:100%;
+}
 }
