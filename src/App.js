@@ -17,7 +17,7 @@ import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
 import BuyersOrders from "./pages/Dashboard/BuyersDashboard/BuyersOrders";
 import BuyersOrderInfo from "./pages/Dashboard/BuyersDashboard/BuyersOrderInfo";
-import BuyersQuote from "./pages/Dashboard/BuyersDashboard/BuyersQuote";
+import BuyersRfqQuote from "./pages/Dashboard/BuyersDashboard/BuyersRfqQuote";
 import BuyersRfqs from "./pages/Dashboard/BuyersDashboard/BuyersRfqs";
 import BuyersSettings from "./pages/Dashboard/BuyersDashboard/BuyersSettings";
 
@@ -32,6 +32,7 @@ import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings"
 import SellersRfqInfo from "./pages/Dashboard/SellersDashboard/SellersRfqInfo"
 import SellersRfqsQuote from "./pages/Dashboard/SellersDashboard/SellersRfqsQuote"
 import SellersProductDescription from "./pages/Dashboard/SellersDashboard/SellersProductDescription";
+import BuyersRecievedQuote from "./pages/Dashboard/BuyersDashboard/BuyersRecievedQuote";
 
 
 function App() {
@@ -54,8 +55,9 @@ function App() {
           <Route path="/buyer/message-center" element={<BuyersMessageCenter />} />
           <Route path="/buyer/orders" element={<BuyersOrders />} />
           <Route path="/buyer/order-info" element={<BuyersOrderInfo />} />
-          <Route path="/buyer/quotes" element={<BuyersQuote />} />
+          <Route path="/buyer/quotes" element={<BuyersRfqQuote />} />
           <Route path="/buyer/rfqs" element={<BuyersRfqs />} />
+          <Route path="/buyer/recieved-quotes" element={<BuyersRecievedQuote />} />
           <Route path="/buyer/settings" element={<BuyersSettings />} />
           
           <Route path="/seller/dashboard" element={<SellersDashboard />} />

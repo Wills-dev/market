@@ -1,22 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
-import BuyersSidebar from "./BuyersComponent/BuyersSidebar";
 import "../Dashboard.css";
-
-// import TrackImg from "../../../../assets/img/track-illus.png";
-// import OrdersImg from "../../../../assets/img/orders-illus.png";
-// import ProductImgTable from "../../../../assets/img/p-img1.png";
+import BuyersSidebar from "../BuyersDashboard/BuyersComponent/BuyersSidebar";
+import card1 from "../../../assets/img/card1.png";
+import card2 from "../../../assets/img/card2.png";
 
 const BuyersDashboard = () => {
-  
   return (
     <div>
       <div className="grid-container">
-
         <header className="header">
           <div className="header__message">
-            <h2>Hello Erhun Abbe</h2>
+            <h2>Hello Thomas</h2>
           </div>
           <div className="header__search">
             <form>
@@ -43,7 +39,7 @@ const BuyersDashboard = () => {
                 primaryColor="#282828"
                 size="medium"
               />
-              <span className="buyer icon-notification position-absolute"></span>
+              <span className="seller icon-notification position-absolute"></span>
             </div>
           </div>
         </header>
@@ -53,59 +49,97 @@ const BuyersDashboard = () => {
         <main className="main">
           <h1 className="section-title">Activity Summary</h1>
           <div className="main-overview">
-            <div className="overview-card">
+            <div className="overview-card-right">
               <div>
-                <h2>Total Transactions</h2>
+                <h2>Track it all</h2>
                 {/* <p>Detailed transaction history is on the order page</p> */}
                 <div class="d-flex justify-content-between mt-4">
-                  <h3>$105,000</h3>
+                  <p>
+                    Track it all! Keep track of all your RfQ’s and transactions
+                    activities here in your Dashboard
+                  </p>
+                  <img src={card1} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="overview-card-left">
+              <div>
+                <h2>Monitor your Rfq's</h2>
+
+                <div class="d-flex justify-content-between mt-4">
+                  <p>
+                    Keep track of all your RfQ’s and transactions activities
+                    here in your order tab on the dashboard
+                  </p>
+                  <img src={card2} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 className="section-title">Activity Summary</h1>
+          <div className="main-overview">
+            <div className="overview-card">
+              <div>
+                <h2>Total Products</h2>
+                <p>Dashboard history is on the Product page</p>
+                <div class="d-flex justify-content-between mt-4">
+                  <h3>25</h3>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="overview-card">
+              <div>
+                <h2>All Rfq's</h2>
+                <p>Detailed history is on the Rfq's page</p>
+                <div class="d-flex justify-content-between mt-4">
+                  <h3>22</h3>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="overview-card">
               <div>
                 <h2>Total Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
-                <div class="d-flex justify-content-between mt-4">
-                  <h3>22</h3>
-                  <Link className="overview-card-link" to="/buyer/orders">View all</Link>
-                </div>
-              </div>
-            </div>
-            <div className="overview-card">
-              <div>
-                <h2>Total RFQs</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <p>Detailed history is on the order page</p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>5</h3>
-                  <Link className="overview-card-link" to="/buyer/rfqs">View all</Link>
+                  <Link>
+                    <button className="viewall">View all</button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
 
-          <h1 className="section-title">Recent Orders</h1>
+          <h1 className="section-title">Latest Orders</h1>
           <div className="main-overview">
             <div className="overview-card no-padding">
               <div class="table-responsive">
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">Order No</th>
                       <th scope="col">Product Info</th>
-                      <th scope="col">Product Cost</th>
-                      <th scope="col">Shipping Terms</th>
-                      <th scope="col">Payment Terms</th>
+                      <th scope="col">Buyer Info</th>
+                      <th scope="col">Shipping Term</th>
+                      <th scope="col">Amount</th>
                       <th scope="col">Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -116,17 +150,18 @@ const BuyersDashboard = () => {
                       <td>FOB</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-warning">
-                          Pending
-                        </div>
+                        <div className="text-warning">Pending</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -137,17 +172,18 @@ const BuyersDashboard = () => {
                       <td>CIF</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-primary">
-                          Processing
-                        </div>
+                        <div className="text-primary">Processing</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -158,17 +194,18 @@ const BuyersDashboard = () => {
                       <td>Local Delivery</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Shipped
-                        </div>
+                        <div className="text-success">Shipped</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -179,17 +216,18 @@ const BuyersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -200,17 +238,18 @@ const BuyersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
-                            <img className="table-product-img" src="" alt="..."/>
+                            <img
+                              className="table-product-img"
+                              src=""
+                              alt="..."
+                            />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
@@ -221,9 +260,7 @@ const BuyersDashboard = () => {
                       <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
-                        <div className="text-success">
-                          Delivered
-                        </div>
+                        <div className="text-success">Delivered</div>
                       </td>
                     </tr>
                   </tbody>
