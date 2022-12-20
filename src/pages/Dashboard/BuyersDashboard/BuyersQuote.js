@@ -1,7 +1,7 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
-import BuyersSidebar from "./BuyersComponent/BuyersSidebar";
+import BuyersSidebar from "../BuyersDashboard/BuyersComponent/BuyersSidebar";
 
 const BuyersQuote = () => {
   return (

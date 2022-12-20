@@ -1,7 +1,8 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
-import BuyersSidebar from "./BuyersComponent/BuyersSidebar";
+import BuyersSidebar from "../BuyersDashboard/BuyersComponent/BuyersSidebar";
+import driedhibiscus from "../../../assets/img/Dried Hibiscus.png";
 
 const BuyersOrders = () => {
   return (
@@ -48,8 +49,8 @@ const BuyersOrders = () => {
           <div className="main-overview">
             <div className="overview-card">
               <div>
-                <h2>Total Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <h2>Total Orders:</h2>
+                <p>Detailed transaction history is on the order page</p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>125</h3>
                 </div>
@@ -57,8 +58,8 @@ const BuyersOrders = () => {
             </div>
             <div className="overview-card">
               <div>
-                <h2>Ongoing Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <h2>Completed Orders:</h2>
+                <p>Detailed transaction history is on the order page</p>
                 <div class="d-flex justify-content-between mt-4">
                   <h3>22</h3>
                 </div>
@@ -66,10 +67,10 @@ const BuyersOrders = () => {
             </div>
             <div className="overview-card">
               <div>
-                <h2>Completed Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
+                <h2>Cancelled Orders:</h2>
+                <p>Detailed transaction history is on the transactions list</p>
                 <div class="d-flex justify-content-between mt-4">
-                  <h3>5</h3>
+                  <h3>55</h3>
                 </div>
               </div>
             </div>
@@ -82,151 +83,104 @@ const BuyersOrders = () => {
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">Order No</th>
                       <th scope="col">Product Info</th>
-                      <th scope="col">Product Cost</th>
-                      <th scope="col">Shipping Terms</th>
-                      <th scope="col">Payment Terms</th>
+                      <th scope="col">Incoterm</th>
+                      <th scope="col">Supplier</th>
+                      <th scope="col">Amount Spent</th>
                       <th scope="col">Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
                             <img
                               className="table-product-img"
-                              src=""
+                              src={driedhibiscus}
                               alt="..."
                             />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
+                            <p>Grade WW32</p>
                           </div>
                         </div>
                       </td>
-                      <td>USD 40,000</td>
                       <td>FOB</td>
-                      <td>Letter of Credit</td>
+                      <td>Devani Limited</td>
+                      <td>USD 5000</td>
                       <td>
-                        <div className="text-warning">Pending</div>
+                        <div className="text-warning">Ongoing</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
                             <img
                               className="table-product-img"
-                              src=""
+                              src={driedhibiscus}
                               alt="..."
                             />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
+                            <p>Grade WW32</p>
                           </div>
                         </div>
                       </td>
-                      <td>USD 40,000</td>
-                      <td>CIF</td>
-                      <td>Letter of Credit</td>
+                      <td>FOB</td>
+                      <td>Devani Limited</td>
+                      <td>USD 5000</td>
                       <td>
-                        <div className="text-primary">Processing</div>
+                        <div className="text-success">Completed</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
                             <img
                               className="table-product-img"
-                              src=""
+                              src={driedhibiscus}
                               alt="..."
                             />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
+                            <p>Grade WW32</p>
                           </div>
                         </div>
                       </td>
-                      <td>XAF 20,000,000</td>
-                      <td>Local Delivery</td>
-                      <td>Letter of Credit</td>
+                      <td>FOB</td>
+                      <td>Devani Limited</td>
+                      <td>USD 5000</td>
                       <td>
-                        <div className="text-success">Shipped</div>
+                        <div className="text-danger">Cancelled</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>0123456543</td>
                       <td>
                         <div className="d-flex">
                           <div className="flex-shrink-0">
                             <img
                               className="table-product-img"
-                              src=""
+                              src={driedhibiscus}
                               alt="..."
                             />
                           </div>
                           <div className="flex-grow-1 ms-3">
                             <p>Dried Hibiscus</p>
+                            <p>Grade WW32</p>
                           </div>
                         </div>
                       </td>
-                      <td>USD 40,000</td>
-                      <td>CFR</td>
-                      <td>Letter of Credit</td>
+                      <td>FOB</td>
+                      <td>Devani Limited</td>
+                      <td>USD 5000</td>
                       <td>
-                        <div className="text-success">Delivered</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>0123456543</td>
-                      <td>
-                        <div className="d-flex">
-                          <div className="flex-shrink-0">
-                            <img
-                              className="table-product-img"
-                              src=""
-                              alt="..."
-                            />
-                          </div>
-                          <div className="flex-grow-1 ms-3">
-                            <p>Dried Hibiscus</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>USD 40,000</td>
-                      <td>CFR</td>
-                      <td>Letter of Credit</td>
-                      <td>
-                        <div className="text-success">Delivered</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>0123456543</td>
-                      <td>
-                        <div className="d-flex">
-                          <div className="flex-shrink-0">
-                            <img
-                              className="table-product-img"
-                              src=""
-                              alt="..."
-                            />
-                          </div>
-                          <div className="flex-grow-1 ms-3">
-                            <p>Dried Hibiscus</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>USD 40,000</td>
-                      <td>CFR</td>
-                      <td>Letter of Credit</td>
-                      <td>
-                        <div className="text-success">Delivered</div>
+                        <div className="text-success">Completed</div>
                       </td>
                     </tr>
                   </tbody>
