@@ -1,7 +1,7 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
-import SellersSidebar from "./SellersComponent/SellersSidebar";
+import SellersSidebar from "../SellersDashboard/SellersComponent/SellersSidebar";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -13,7 +13,6 @@ import { AiOutlineSmile } from "react-icons/ai";
 import { AiOutlineRocket } from "react-icons/ai";
 import { MdOutlineAgriculture } from "react-icons/md";
 import { BsCloudUpload } from "react-icons/bs";
-
 
 import Form from "react-bootstrap/Form";
 
@@ -170,7 +169,7 @@ const SellersNewProducts = () => {
                         Click on the plus or minus sign to add new types/ values
                       </p>
                       <div className="minimum-order">
-                        <div className="productpricediv">
+                        <div className="minimumorderdiv">
                           <input />
                           <p>Metric Tons</p>
                           <div className="productprice-button">
@@ -200,59 +199,74 @@ const SellersNewProducts = () => {
               </div>
 
               <div className="categories">
+                <h6>Categories</h6>
                 <div className="overview-card categorieslist-container">
                   <div className="categorieslist">
-                    <span>
-                      <MdOutlineLocalPizza />
-                    </span>
-                    <p>Food & Beverage</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <MdOutlineLocalPizza />
+                      </span>
+                      <p>Food & Beverage</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <BsScissors />
-                    </span>
-                    <p>Apparel</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <BsScissors />
+                      </span>
+                      <p>Apparel</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <BiPackage />
-                    </span>
-                    <p>Packaging & Supplies</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <BiPackage />
+                      </span>
+                      <p>Packaging & Supplies</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <MdOutlineMapsHomeWork />
-                    </span>
-                    <p>Home & Furniture</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <MdOutlineMapsHomeWork />
+                      </span>
+                      <p>Home & Furniture</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <AiOutlineSmile />
-                    </span>
-                    <p>Beauty & Personal Care</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <AiOutlineSmile />
+                      </span>
+                      <p>Beauty & Personal Care</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <AiOutlineRocket />
-                    </span>
-                    <p>Minerals & Mettalurgy</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <AiOutlineRocket />
+                      </span>
+                      <p>Minerals & Mettalurgy</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                   <div className="categorieslist">
-                    <span>
-                      <MdOutlineAgriculture />
-                    </span>
-                    <p>Agriculture</p>
+                    <div className="categoriesdescription">
+                      <span>
+                        <MdOutlineAgriculture />
+                      </span>
+                      <p>Agriculture</p>
+                    </div>
                     <Form.Check aria-label="option 1" />
                   </div>
                 </div>
 
-                <p className="sub-categories">Sub Categories</p>
+                <h6 className="sub-categories">Sub Categories</h6>
 
                 <Form.Select size="sm">
                   <option></option>
@@ -267,7 +281,9 @@ const SellersNewProducts = () => {
                   You are allowed to upload a maximum of 4 images to display
                 </p>
                 <div className="overview-card image-upload">
-                  <span><BsCloudUpload/></span>
+                  <span>
+                    <BsCloudUpload />
+                  </span>
                   <h6> Drop Image here</h6>
                   <p>
                     Or Browse Images from your device<Link to=""> here</Link>{" "}
