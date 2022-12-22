@@ -12,6 +12,7 @@ import ForgotPassword from "./pages/Authentication/ForgotPassword";
 import Login from "./pages/Authentication/Login";
 import ResetPassword from "./pages/Authentication/ResetPassword";
 import ProductListing from "./pages/ProductListing/ProductListing";
+import ProductListingInfo from "./pages/ProductListing/ProductListingInfo";
 
 import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/all-product" element={<ProductListing />} />
+          <Route path="/product-listing-info" element={<ProductListingInfo />} />
           <Route path="/authentication" element={<Authentication />} />
           <Route path="/buyers-registration" element={<BuyersRegistration />} />
           <Route path="/sellers-registration"  element={<SellersRegistration />} />

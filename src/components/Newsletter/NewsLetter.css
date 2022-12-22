@@ -1,0 +1,33 @@
+.Newsletter-Container {
+  border: 1px solid #dddd;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-form input {
+  margin-right: 10px;
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+.subscribe-form button {
+  background-color: #dc4d04;
+  padding: 10px 20px !important;
+  border: none;
+}
+@media (max-width: 1200px) {
+.Newsletter-Container {
+ display:flex;
+ flex-direction: column;
+ text-align: center;
+}
+.subscribe-form button{
+    margin: 10px;
+}
+.subscribe-form input{
+    margin: 10px 0 10px 0 !important;
+}
+}
