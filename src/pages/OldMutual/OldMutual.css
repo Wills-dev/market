@@ -1,0 +1,59 @@
+.oldMutual{
+   width: 100%;
+    margin-bottom: 60px;
+    justify-content: start;
+    margin-left: 50px;
+   
+}
+.oldmutual-becomesupplier{
+    display: flex;
+    flex-direction: row;
+}
+.oldmutualplan-title{
+     text-align:start;
+}
+.oldmutualexclusion{
+  display: flex;
+  border: none;
+}
+.oldmutualexclusioncontainer h3{
+    margin-left: 20px;
+}
+.oldmutual-compliance-exclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  background-color: #FFF;
+  grid-column-gap: 5px;
+  width: 80%;
+  margin: auto;
+}
+.oldmutualsuppliersteps h4{
+  margin-left: 16px;
+  font-weight: bolder;
+}
+.supplyimage1-oldmutual{
+top: 0;
+}
+.supplyimage2-oldmutual{
+
+  position: absolute;
+        top: -70px;
+        left: 350px;
+        border-radius: 0;
+}
+.oldmutual-compliance-exclusion{
+  width: 100%;
+ 
+}
+.oldmutualexclusion{
+  width: 70%;
+}
+.oldmutualbasicplan{
+  padding: 20px;
+  width: 35%;
+  background: #ffffff;
+  border: 1px solid rgba(40, 40, 40, 0.4);
+  border-radius: 12px;
+ 
+}

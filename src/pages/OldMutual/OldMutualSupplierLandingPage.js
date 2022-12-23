@@ -6,17 +6,17 @@ import sellerlanding1 from "../../assets/img/sellerlanding1.png";
 import sellerlanding2 from "../../assets/img/sellerlanding2.png";
 import sellerlanding3 from "../../assets/img/sellerlanding3.png";
 import supplier1 from "../../assets/img/supplier1.png";
-import supplier2 from "../../assets/img/supplier2.png";
-import supplier3 from "../../assets/img/supplier3.png";
-import "./SellersLandingPage.css";
+import oldmutual1 from "../../assets/img/oldmutual1.png";
+import oldmutual2 from "../../assets/img/oldmutual2.png";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { AiOutlineCheck } from "react-icons/ai";
 import { MdDownloadForOffline } from "react-icons/md";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 import nicee1 from "../../assets/img/nicee1.png";
+import "./OldMutual.css";
 
-const SellersLandingPage = () => {
+const OldMutualSupplierLandingPage = () => {
   return (
     <>
       <Header />
@@ -92,14 +92,21 @@ const SellersLandingPage = () => {
             </div>
           </div>
           <div className="become-supplier">
-            <h2>Want To Become A Supplier?</h2>
             <div className="become-supplier-container">
               <div className="Supplier-image">
-                <img src={supplier1} alt="" className="supplyimage1" />
-                <img src={supplier3} alt="" className="supplyimage2" />
-                <img src={supplier2} alt="" className="supplyimage3" />
+                <img
+                  src={oldmutual2}
+                  alt=""
+                  className="supplyimage1-oldmutual"
+                />
+                <img
+                  src={oldmutual1}
+                  alt=""
+                  className="supplyimage2-oldmutual"
+                />
               </div>
-              <div className="Supplier-steps">
+              <div className="Supplier-steps oldmutualsuppliersteps">
+                <h4>Becomme A Supplier in Three Steps</h4>
                 <ul>
                   <li>
                     <p>
@@ -122,36 +129,27 @@ const SellersLandingPage = () => {
                     </p>
                   </li>
                 </ul>
-                <div className="become-supplier-button">
+                <div className="become-supplier-button oldmutual-becomesupplier">
                   <Button className="changepassword">Register Now</Button>
                 </div>
               </div>
             </div>
           </div>
           <div className="plans-pricing">
-            <div className="plans-pricing-title">
+            <div className="plans-pricing-title oldmutualplan-title">
               <h2>Plans & Pricing</h2>
-              <p>
-                Simple Pricing. No hidden Feee. Advance features for your
-                business
-              </p>
+              <p>No hidden fees, or advance fees</p>
             </div>
             <div className="plans">
-              <div className="plan-types">
-                <div className="Basic-plan">
+              <div className="plan-types oldMutual">
+                <div className="Basic-plan oldmutualbasicplan">
                   <AiOutlineLoading3Quarters style={{ color: "blue" }} />
                   <h6>Basic Plan</h6>
                   <p>The perfect Plan for starters</p>
                   <h5>FREE</h5>
                   <p>No cost on this plan</p>
-                  <div className="plans-button">
-                    <button>Register Now</button>
-                  </div>
+
                   <div className="plans-details">
-                    <div className="plan-destails-item">
-                      <FaTimes style={{ color: "red" }} />
-                      <p>No Quote Posting</p>
-                    </div>
                     <div className="plan-destails-item">
                       <AiOutlineCheck />
                       <p>Commission: 5%</p>
@@ -164,63 +162,15 @@ const SellersLandingPage = () => {
                       <AiOutlineCheck />
                       <p>Number of Pictures: 10</p>
                     </div>
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>
-                        Access buyer/Seller contact details: 2$ Per contract
-                      </p>
-                    </div>
                   </div>
                 </div>
-                <div className="premium-plan">
-                  <AiOutlineLoading3Quarters style={{ color: "blue" }} />
-                  <h6>Premium Plan</h6>
-                  <p>The perfect Plan for Ease</p>
-                  <h5>
-                    $40 <span>/Month</span> - $50<span>/Quater</span>
-                  </h5>
-                  <p>Billed per month or Quaterly</p>
-                  <div className="plans-button">
-                    <button>Try This plan</button>
-                  </div>
-                  <div className="plans-details">
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>No Quote Posting</p>
-                    </div>
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>Commission: 3.5%</p>
-                    </div>
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>Number of Products: Unlimited</p>
-                    </div>
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>Number of Pictures: Unlimited</p>
-                    </div>
-                    <div className="plan-destails-item">
-                      <AiOutlineCheck />
-                      <p>Access buyer/Seller contact details: FREE</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="plan-text">
-                <p>
-                  *A Free Plan is granted to sellers after signing up. All
-                  though it is advised to pay for the Premium subscription
-                  immediately because the free plan limits the features that can
-                  be accessed greatly.
-                </p>
               </div>
             </div>
           </div>
-          <div className="compliane-exclusion">
-            <div className="prooduct-exclusion-container">
+          <div className="compliane-exclusion oldmutual-compliance-exclusion">
+            <div className="prooduct-exclusion-container oldmutualexclusioncontainer">
               <h3>Our Supplier Complainces</h3>
-              <div className="product-exclusion">
+              <div className="product-exclusion oldmutualexclusion">
                 <div className="product-exclusion-text">
                   <p>
                     All compliances on the suppliers marketplace must be adhered
@@ -236,9 +186,9 @@ const SellersLandingPage = () => {
               </div>
             </div>
 
-            <div className="prooduct-exclusion-container">
+            <div className="prooduct-exclusion-container  oldmutualexclusioncontainer">
               <h3>Our Product Exclusions</h3>
-              <div className="product-exclusion">
+              <div className="product-exclusion oldmutualexclusion">
                 <div className="product-exclusion-text">
                   <p>
                     Certain products are prohibited from being listed on the
@@ -276,4 +226,4 @@ const SellersLandingPage = () => {
   );
 };
 
-export default SellersLandingPage;
+export default OldMutualSupplierLandingPage;

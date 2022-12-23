@@ -12,6 +12,10 @@ import ForgotPassword from "./pages/Authentication/ForgotPassword";
 import Login from "./pages/Authentication/Login";
 import ResetPassword from "./pages/Authentication/ResetPassword";
 import ProductListing from "./pages/ProductListing/ProductListing";
+import SupplierInfo from "./pages/SuppliersInfo/SupplierInfo";
+import Rfqs from "./pages/RFQs/Rfqs";
+import AllCategories from "./pages/AllCatregories/AllCategories";
+import OldmutualSupplierLandingPage from "./pages/OldMutual/OldMutualSupplierLandingPage";
 
 import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
@@ -34,8 +38,6 @@ import SellersRfqInfo from "./pages/Dashboard/SellersDashboard/SellersRfqInfo";
 import SellersRfqsQuote from "./pages/Dashboard/SellersDashboard/SellersRfqsQuote";
 import SellersProductDescription from "./pages/Dashboard/SellersDashboard/SellersProductDescription";
 
-
-
 function App() {
   return (
     <>
@@ -50,10 +52,20 @@ function App() {
             path="/sellers-registration"
             element={<SellersRegistration />}
           />
+          <Route path="/rfqs" element={<Rfqs />} />
+          <Route path="/allCategories" element={<AllCategories />} />
+          <Route
+            path="/OldmutualSupplierLandingPage"
+            element={<OldmutualSupplierLandingPage />}
+          />
+
           <Route
             path="/sellers-landing-page"
             element={<SellersLandingPage />}
           />
+
+          <Route path="/Supplier-info" element={<SupplierInfo />} />
+
           <Route path="/phone-verification" element={<PhoneVerification />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route

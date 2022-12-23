@@ -150,6 +150,9 @@ height: 40%;
   width: 100%;
   background: #0064e5;
   border-radius: 8px;
+  padding: 10px 0;
+  border: none;
+  color:white;
 }
 .plan-text {
   width: 50%;
@@ -204,49 +207,4 @@ height: 40%;
   border-radius: 0;
   padding: 10px 80px;
   border: 1px solid #fff;
-}
-@media only screen and (max-width: 1200px) {
-  .seller-landing-register {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  .why-sell {
-    padding: 20px;
-  }
-  .Why-sell-cards,
-  .become-supplier-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  ul {
-    padding: 0 !important;
-  }
-  .become-supplier {
-    padding: 0;
-  }
-  .plan-types{
-display: flex;
-flex-direction: column;
-width: 100%;
-  }
-  .Basic-plan,.premium-plan{
-    width: 100%;
-    margin: 20px 0;
-  }
-  .compliane-exclusion{
-display: grid;
-grid-template-columns: 1fr;
-width: 100%;
-  }
-  .right-marketplace-image button{
-    position: relative
-    ;left: 0;
-    margin:10px;
-    color:#000;
-    background-color:#0064E5 !important;
-    /* border-radius: 0; */
-    padding: 10px;
-   
-  }
 }

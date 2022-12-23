@@ -1,0 +1,102 @@
+.shadow-sm {
+  box-shadow: none !important;
+}
+.supplier-info-container{
+    padding: 40px;
+} 
+.back-btn{
+    border: none;
+    background:none;
+}
+.Browse-product-info-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.Browse-Product-image img{
+    width: 100%;
+    height: auto;
+}
+.Browse-Product-info{
+border: 0.8px solid #DDDDDD;
+border-radius: 4px;
+width: 40%;
+padding: 20px;
+
+}
+.browse-info-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.browse-info-details h6{
+    margin: 0;
+    font-weight: bolder;
+    width: 50%;
+}
+.browse-info-details p{
+    margin: 0;
+    width: 50%;
+}
+.browse-info-buttons button{
+   border-radius: 4px; 
+   padding: 5px 30px;
+}
+.browse-message{
+color: white;
+border: none;
+background: #DC4D04;
+}
+.browse-share{
+color: #DC4D04;
+border: 1px solid #DC4D04;
+background: #fff;
+margin-left: 20px;
+}
+.Company-information-container {
+   padding: 20px 120px;
+}
+.Company-information-box ul{
+    display: flex;
+    list-style: none;
+    font-weight: bolder;
+    
+}
+.Company-information-box li{
+    margin-right: 100px;
+
+}
+.Company-information-box a{
+    color: #282828;
+}
+.active{
+
+border-bottom: 3px solid #0064E5;
+}
+.Listed-Products{
+    margin-top: 80px;
+}
+.Listed-Products h4{
+    margin:40px 0;
+}
+.Description li{
+    margin: 20px 0;
+}
+.response-quote{
+    display: flex;
+    border: 1px solid #DDDDDD;
+border-radius: 4px;
+justify-content: space-between;
+padding: 20px 40px;
+margin: 20px 0;
+align-items: center;
+}
+.request-quotebtn{
+color: white;
+border: none;
+background: #DC4D04;
+border-radius: 4px;
+padding: 5px 20px;
+
+}
