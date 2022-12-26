@@ -1,59 +1,235 @@
-.oldMutual{
-   width: 100%;
-    margin-bottom: 60px;
-    justify-content: start;
-    margin-left: 50px;
-   
+.oldMutual {
+  width: 100%;
+  margin-bottom: 60px;
+  justify-content: start;
 }
-.oldmutual-becomesupplier{
-    display: flex;
-    flex-direction: row;
+.seller-landing-box {
+  background: #fff;
 }
-.oldmutualplan-title{
-     text-align:start;
+.oldmutual-landing-register {
+  display: flex;
 }
-.oldmutualexclusion{
+.oldmutual-become-supplier {
+  background: #fff;
+  padding: 8rem 0;
+}
+
+.oldmutual-become-supplier-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.oldmutual-becomesupplier {
+  display: flex;
+  flex-direction: row;
+}
+.oldmutual-plans-pricing {
+  background-color: #f9f9f9;
+  margin: 50px 0;
+}
+.oldmutualexclusion {
   display: flex;
   border: none;
 }
-.oldmutualexclusioncontainer h3{
-    margin-left: 20px;
+.oldmutual-complianceExclusion-box {
+  background: #fff;
+  padding: 50px 0;
 }
 .oldmutual-compliance-exclusion {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px;
-  background-color: #FFF;
+  background-color: #fff;
   grid-column-gap: 5px;
   width: 80%;
   margin: auto;
 }
-.oldmutualsuppliersteps h4{
+.oldmutualsuppliersteps h4 {
   margin-left: 16px;
   font-weight: bolder;
 }
-.supplyimage1-oldmutual{
-top: 0;
+.supplyimage1-oldmutual {
+  top: 0;
 }
-.supplyimage2-oldmutual{
-
+.supplyimage2-oldmutual {
   position: absolute;
-        top: -70px;
-        left: 350px;
-        border-radius: 0;
+  top: -70px;
+  left: 350px;
+  border-radius: 0;
 }
-.oldmutual-compliance-exclusion{
+.oldmutual-compliance-exclusion {
   width: 100%;
- 
 }
-.oldmutualexclusion{
+.oldmutualexclusion {
   width: 70%;
 }
-.oldmutualbasicplan{
+.oldmutualbasicplan {
   padding: 20px;
   width: 35%;
   background: #ffffff;
   border: 1px solid rgba(40, 40, 40, 0.4);
   border-radius: 12px;
- 
+}
+.oldmutual-right-marketplace {
+  background: #fff;
+  padding: 50px 0;
+}
+.oldmutual-right-marketplace-title {
+  text-align: center;
+}
+.main-why-sell-container {
+  margin: 50px 0;
+}
+.main-why-sell-container h4 {
+  margin-bottom: 20px;
+}
+.main-why-sell {
+  display: flex;
+  justify-content: space-between;
+}
+.main-why-sell-content {
+  width: 20%;
+  padding: 20px 30px;
+  background-color: white;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.oldmutual-main-becomeseller-box {
+  display: flex;
+  padding: 40px 0;
+  font-size: 14px;
+}
+.main-become-seller-image {
+  width: 50%;
+}
+.main-become-seller-image img {
+  width: 100%;
+  height: auto;
+}
+.main-become-seller-content {
+  background-color: #fff;
+
+  position: relative;
+}
+.main-become-seller-content-list {
+  padding: 50px 30px;
+}
+.main-become-seller-content button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  text-align: start;
+  background-color: #5eb849;
+  font-size: 20px;
+  color: white;
+}
+.main-become-seller-content-list h4,
+.main-why-sell-container h4 {
+  font-weight: bolder;
+}
+.main-become-seller-content-list li {
+  list-style: none;
+}
+.main-become-seller-content li {
+  margin: 20px 0;
+}
+.oldmutual-main-suppliercompliance-image img {
+  width: 100%;
+  height: auto;
+}
+.oldmutual-main-suppliercompliance {
+  position: relative;
+  margin: 0px 0 120px 0;
+}
+.oldmutual-main-suppliercompliance-infobox {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 60%;
+}
+.oldmutual-main-suppliercompliance-info {
+  background-color: #fff;
+  width: 40%;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.om-download {
+  font-size: 12px;
+  color: #4fb848;
+}
+.om-download span {
+  margin-right: 10px;
+}
+.explore-cat-box-heading,
+.featured-prod-box-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.explore-cat-box-heading button,
+.featured-prod-box-heading button {
+  border: none;
+  background: none;
+  color: #4fb848;
+  font-weight: 500;
+}
+.explore-cat-box-images,
+.feature-cat-box-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.explore-cat-box-image {
+  padding: 20px 10px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.oldmutual-explore-categories {
+  padding: 40px 0;
+}
+.feature-cat-box-image {
+  background: #fff;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.feature-cat-box-image p {
+  padding: 0 10px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.fp-info span {
+  font-weight: 700;
+}
+.begin-journey-container {
+  margin-top: 40px;
+}
+.begin-journey-image img {
+  width: 100%;
+  height: auto;
+}
+.begin-journey-container {
+  position: relative;
+}
+.begin-journey-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  text-align: center;
+  font-size: 16px;
+}
+.begin-journey-content h4,.begin-journey-content p {
+  color: #fff !important;
+}
+
+.begin-journey-footer-box {
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 12px;
+  font-weight: 600;
 }

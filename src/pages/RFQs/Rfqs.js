@@ -16,112 +16,11 @@ const Rfqs = () => {
       <Header />
       <div>
         <div className="rfq-landing-container">
-          <button className="back-btn">
-            {" "}
-            <BiArrowBack /> RFQ's
-          </button>
-          <div className="rfq-cards">
-            <div className="rfq-list-wrap">
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-              <div className="rfq-list-box">
-                <h2>Dried Split Ginger</h2>
-                <h3>Quantity: 200 Metric Tonnes</h3>
-                <p>
-                  Date created: Mon 15th Aug, 2022
-                  <span>
-                    <Link onClick={handleShow}>View details</Link>
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="response-quote">
-              <div className="quote-text">
-                <h5>Get Multiple Response to Single Quote</h5>
-                <p>Are you interested in this market? Get a quote now.</p>
-              </div>
-              <div className="request-quote">
-                <button className="request-quotebtn">Request Quote</button>
-              </div>
-            </div>
+          <div className="container">
+            <button className="back-btn">
+              {" "}
+              <BiArrowBack /> RFQ's
+            </button>
             <div className="rfq-cards">
               <div className="rfq-list-wrap">
                 <div className="rfq-list-box">
@@ -130,26 +29,6 @@ const Rfqs = () => {
                   <p>
                     Date created: Mon 15th Aug, 2022
                     <span>
-                      <Link>View details</Link>
-                    </span>
-                  </p>
-                </div>
-                <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link>View details</Link>
-                    </span>
-                  </p>
-                </div>
-                <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
                       <Link onClick={handleShow}>View details</Link>
                     </span>
                   </p>
@@ -190,7 +69,27 @@ const Rfqs = () => {
                   <p>
                     Date created: Mon 15th Aug, 2022
                     <span>
-                      <Link>View details</Link>
+                      <Link onClick={handleShow}>View details</Link>
+                    </span>
+                  </p>
+                </div>
+                <div className="rfq-list-box">
+                  <h2>Dried Split Ginger</h2>
+                  <h3>Quantity: 200 Metric Tonnes</h3>
+                  <p>
+                    Date created: Mon 15th Aug, 2022
+                    <span>
+                      <Link onClick={handleShow}>View details</Link>
+                    </span>
+                  </p>
+                </div>
+                <div className="rfq-list-box">
+                  <h2>Dried Split Ginger</h2>
+                  <h3>Quantity: 200 Metric Tonnes</h3>
+                  <p>
+                    Date created: Mon 15th Aug, 2022
+                    <span>
+                      <Link onClick={handleShow}>View details</Link>
                     </span>
                   </p>
                 </div>
@@ -215,14 +114,117 @@ const Rfqs = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="response-quote">
-              <div className="quote-text">
-                <h5>Get Multiple Response to Single Quote</h5>
-                <p>Are you interested in this market? Get a quote now.</p>
+              <div className="response-quote">
+                <div className="quote-text">
+                  <h5>Get Multiple Response to Single Quote</h5>
+                  <p>Are you interested in this market? Get a quote now.</p>
+                </div>
+                <div className="request-quote">
+                  <button className="request-quotebtn">Request Quote</button>
+                </div>
               </div>
-              <div className="request-quote">
-                <button className="request-quotebtn">Request Quote</button>
+              <div className="rfq-cards">
+                <div className="rfq-list-wrap">
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="rfq-list-box">
+                    <h2>Dried Split Ginger</h2>
+                    <h3>Quantity: 200 Metric Tonnes</h3>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="response-quote">
+                <div className="quote-text">
+                  <h5>Get Multiple Response to Single Quote</h5>
+                  <p>Are you interested in this market? Get a quote now.</p>
+                </div>
+                <div className="request-quote">
+                  <button className="request-quotebtn">Request Quote</button>
+                </div>
               </div>
             </div>
           </div>
@@ -234,21 +236,23 @@ const Rfqs = () => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className="rfq-modal">
-              <div className="rfq-quantity">
-                <div>
-                  <p>Quantity:</p>
-                  <h5>40 Tonnes</h5>
+            <div className="container">
+              <div className="rfq-modal">
+                <div className="rfq-quantity">
+                  <div>
+                    <p>Quantity:</p>
+                    <h5>40 Tonnes</h5>
+                  </div>
+                  <div>
+                    <p>Country Of Destination:</p>
+                    <h5>Cameroon</h5>
+                  </div>
                 </div>
-                <div>
-                  <p>Country Of Destination:</p>
-                  <h5>Cameroon</h5>
-                </div>
+                <p>Specifications::</p>
+                <h5>WW180, 47 KOR</h5>
+                <p>Requirements:</p>
+                <h5>I need to get the best quality cashew kernels urgently</h5>
               </div>
-              <p>Specifications::</p>
-              <h5>WW180, 47 KOR</h5>
-              <p>Requirements:</p>
-              <h5>I need to get the best quality cashew kernels urgently</h5>
             </div>
           </Modal.Body>
         </Modal>

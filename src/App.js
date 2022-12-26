@@ -14,8 +14,10 @@ import ResetPassword from "./pages/Authentication/ResetPassword";
 import ProductListing from "./pages/ProductListing/ProductListing";
 import SupplierInfo from "./pages/SuppliersInfo/SupplierInfo";
 import Rfqs from "./pages/RFQs/Rfqs";
-import AllCategories from "./pages/AllCatregories/AllCategories";
+import AllCategories from "./pages/AllCategories/AllCategories";
+import AllCategoriestwo from "./pages/AllCategories/AllCategoriestwo";
 import OldmutualSupplierLandingPage from "./pages/OldMutual/OldMutualSupplierLandingPage";
+import OldMutualSupplierMainLandingPage from "./pages/OldMutual/OldMutualSupplierMainLandingPage";
 
 import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
@@ -54,9 +56,14 @@ function App() {
           />
           <Route path="/rfqs" element={<Rfqs />} />
           <Route path="/allCategories" element={<AllCategories />} />
+          <Route path="/allCategoriestwo" element={<AllCategoriestwo />} />
           <Route
-            path="/OldmutualSupplierLandingPage"
+            path="/Oldmutual-Supplier-LandingPage"
             element={<OldmutualSupplierLandingPage />}
+          />
+          <Route
+            path="/oldmutual-Supplier-main-LandingPage"
+            element={<OldMutualSupplierMainLandingPage />}
           />
 
           <Route

@@ -2,7 +2,7 @@
   box-shadow: none !important;
 }
 .rfq-landing-container{
-    padding: 40px;
+    padding: 40px 0;
 
 }
 .rfq-cards{
@@ -16,7 +16,6 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .rfq-list-box {
-    width: 390px;
     padding: 20px;
     border-radius: 4px;
     margin-right: 15px;
@@ -64,4 +63,10 @@
 .rfq-modal h5{
     font-weight: bolder;
     font-size: 14px;
+}
+@media (max-width: 1200px) {
+    .rfq-list-wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

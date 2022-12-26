@@ -3,14 +3,11 @@
 }
 
 .seller-landing-register {
-  display: flex;
   background-color: #fff;
-  justify-content: space-between;
-  padding: 40px;
 }
-
-.seller-landing-connect {
-  padding: 0 10px;
+.seller-landing-register-box{
+display: flex;
+padding: 50px 0;
 }
 
 .seller-landing-connect h2 span {
@@ -53,12 +50,10 @@ height: 40%;
 }
 .why-sell {
   background: #f9f9f9;
-  padding: 100px 40px;
+  padding: 50px 0;
 }
-.Why-sell-title,
-.plans-pricing-title {
+.Why-sell-title{
   text-align: center;
-  padding: 30px 40px;
 }
 .Why-sell-cards {
   display: grid;
@@ -80,8 +75,8 @@ height: 40%;
   font-size: 14px;
 }
 .become-supplier {
-  padding: 100px 40px;
   background: #fff;
+  padding: 50px 0;
 }
 .become-supplier-container {
   display: grid;
@@ -111,9 +106,15 @@ height: 40%;
         top: 150px;
         left: 350px;
 }
+.plans-pricing{
+  padding: 50px 0;
+  background: #fff;
+}
+.plans-pricing-title{
+  text-align: center;
+}
 .plan-types {
   display: flex;
-  width: 90%;
   margin: auto;
   justify-content: center;
 }
@@ -160,13 +161,14 @@ height: 40%;
   text-align: center;
   padding: 20px 0;
 }
+.compliance-exclusion-box {
+  padding: 50px 0;
+}
 .compliane-exclusion {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px;
   background-color: #f9f9f9;
   grid-column-gap: 10px;
-  width: 80%;
   margin: auto;
 }
 .product-exclusion {
@@ -190,8 +192,8 @@ height: 40%;
 }
 
 .right-marketplace {
-  padding: 40px;
   background-color: #fff;
+  padding: 50px 0;
 }
 .right-marketplace-image img {
   width: 100%;
