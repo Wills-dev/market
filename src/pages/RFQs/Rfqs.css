@@ -1,0 +1,79 @@
+.shadow-sm {
+  box-shadow: none !important;
+}
+.rfq-landing-container {
+  padding: 40px 0;
+}
+.rfq-cards {
+  margin: 20px 0;
+}
+.rfq-list-wrap {
+  width: 100%;
+  display: grid;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.rfq-list-box {
+  padding: 20px;
+  border-radius: 4px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: rgba(216, 227, 251, 0.22);
+}
+.rfq-list-box h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.rfq-list-box h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 25px;
+}
+.rfq-list-box p {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.rfq-list-box p span {
+  float: right;
+}
+.rfq-list-box p span a {
+  color: #0064e5;
+  text-decoration: underline;
+}
+
+.rfq-modal {
+  padding: 20px !important;
+}
+.rfq-quantity {
+  display: flex;
+}
+.cod {
+  margin-left: 50px;
+}
+.rfq-modal p {
+  display: block;
+  font-size: 12px;
+}
+.rfq-modal h5 {
+  font-weight: bolder;
+  font-size: 14px;
+}
+.rfq-list-btmitems {
+  margin-top: 20px;
+  color: rgba(27, 38, 49, 0.65);
+}
+@media (max-width: 1200px) {
+  .rfq-list-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .modal {
+    left: 0 !important;
+  }
+}

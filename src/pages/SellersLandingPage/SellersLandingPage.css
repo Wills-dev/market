@@ -1,0 +1,327 @@
+.shadow-sm {
+  box-shadow: none !important;
+}
+
+.seller-landing-register {
+  background-color: #fff;
+}
+.seller-landing-register-box {
+  display: flex;
+  padding: 40px 0;
+}
+
+.seller-landing-connect h2 span {
+  color: #dd4f05 !important;
+}
+.seller-landing-connect h2 {
+  width: 70%;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.seller-landing-connect p {
+  margin: 40px 0;
+  width: 70%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.seller-landing-images {
+  display: flex;
+  width: 50%;
+}
+.seller-landing-connect-images img {
+  width: 100%;
+  height: auto;
+}
+
+.seller-landing-connect button,
+.become-supplier button {
+  background: #dc4d04;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 20px;
+}
+.why-sell {
+  background: #f9f9f9;
+  padding: 40px 0;
+}
+.Why-sell-title {
+  text-align: center;
+}
+.Why-sell-title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+}
+.Why-sell-title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.Why-sell-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.why-sell-number {
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  margin: 20px 0;
+}
+.Why-sell-card h5 {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+.Why-sell-text {
+
+  font-size: 12px;
+  color:rgba(40, 40, 40, 0.81);
+  font-weight: 500;
+
+
+}
+.become-supplier {
+  background: #fff;
+  padding: 40px 0;
+}
+.become-supplier-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.become-supplier  h2{
+font-weight: 700;
+font-size: 30px;
+color: #000000;
+}
+
+.Supplier-steps p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.become-supplier-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Supplier-image {
+  position: relative;
+}
+.supplyimage1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.supplyimage2 {
+  position: absolute;
+  top: 150px;
+  left: 350px;
+}
+.plans-pricing {
+  padding: 50px 0;
+  background: #fff;
+}
+.plans-pricing-title h2{
+    font-weight: 800;
+font-size: 36px;
+line-height: 45px;
+}
+.plans-pricing-title {
+  text-align: center;
+
+}
+.plan-types {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.Basic-plan {
+  padding: 20px;
+  width: 35%;
+  background: #ffffff;
+  border: 1px solid rgba(40, 40, 40, 0.4);
+  border-radius: 12px;
+  margin-right: 50px;
+}
+.Basic-plan h5,.premium-plan h5 span{
+  font-weight: 800;
+font-size: 26px;
+line-height: 33px;
+color: #000000;
+}
+.premium-plan {
+  border: 1px solid green;
+  padding: 20px;
+  width: 35%;
+  background: #ffffff;
+  border: 1px solid rgba(40, 40, 40, 0.4);
+  border-radius: 12px;
+}
+.plans-details {
+  margin: 20px 0;
+}
+.plan-destails-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.plan-destails-item p {
+  margin-left: 10px;
+  margin-bottom: 0 !important;
+}
+.plans-button button {
+  width: 100%;
+  background: #0064e5;
+  border-radius: 8px;
+  padding: 10px 0;
+  border: none;
+  color: white;
+}
+.plan-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.prooduct-exclusion-container h3{
+font-weight: 700;
+font-size: 26px;
+line-height: 38px;
+color: #000000;
+}
+
+.compliance-exclusion-box {
+  padding: 50px 0;
+}
+.compliane-exclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f9f9f9;
+  grid-column-gap: 10px;
+  margin: auto;
+}
+.product-exclusion {
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid #dc4d04;
+}
+.product-exclusion-text {
+  margin-left: 20px;
+  font-weight: 600;
+font-size: 16px;
+line-height: 32px;
+color: #000000;
+}
+
+.download-pdf {
+  color: #282828;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.download-pdf p {
+  margin-left: 5px;
+  margin-top: 15px;
+  color: #979797;
+}
+
+.right-marketplace {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.rm-pricing-title{
+  text-align: center;
+}
+.rm-pricing-title p{
+  font-weight: 400;
+font-size: 14px;
+line-height: 25px;
+color: rgba(40, 40, 40, 0.81);
+}
+.right-marketplace-image img {
+  width: 100%;
+  height: auto;
+}
+.right-marketplace-image {
+  position: relative;
+  top: 0;
+}
+.right-marketplace-image button {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 300px;
+  color: #fff !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  padding: 15px 0;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .seller-landing-register-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .seller-landing-images {
+    margin-top: 20px;
+  }
+  .become-supplier-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .Supplier-steps ul {
+    padding: 20px;
+    margin-top: 150px;
+  }
+  .plan-types {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .Basic-plan,
+  .premium-plan {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .plan-text {
+    width: 100%;
+    padding: 20px;
+  }
+  .compliane-exclusion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .why-sell {
+    padding: 20px;
+  }
+  .Why-sell-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .supplyimage2 {
+    position: absolute;
+    top: 150px;
+    left: 320px;
+  }
+
+  .right-marketplace-image button {
+    left: 20%;
+    top: 30%;
+    width: 200px;
+  }
+}

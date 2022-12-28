@@ -43,8 +43,13 @@ footer {
 .fb-wrap ul li a:hover {
     text-decoration: underline;
 }
+.footer-list h5{
+font-size: 14px;
+font-weight: bolder;
+}
 .footer-list a{
     color: #fff;
+    font-size: 12px;
 }
 .footer-list li a:hover {
     text-decoration: underline;
@@ -75,4 +80,19 @@ color: #FFFFFF;
     .fb-wrap ul {
         display: none;
     }
+}
+@media (max-width: 1200px) {
+     .footer-list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    
+}
+.footer-list h5{
+    margin: 0;
+    font-size: 18px;
+}
+
 }
