@@ -39,15 +39,15 @@ const OldMutualSupplierLandingPage = () => {
                 <div className="Sld-sideimageone">
                   <img src={sellerlanding1} alt="" className="sellerlanding1" />
                 </div>
-                <div className="Sld-sideimagetwo">
+                {/* <div className="Sld-sideimagetwo">
                   <img src={sellerlanding2} alt="" className="sellerlanding2" />
                   <img src={sellerlanding3} alt="" className="sellerlanding3" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="old-mutual-why-sell">
+        <div className="why-sell">
           <div className="container">
             <div className="Why-sell-title">
               <h2>Why Sell on MarketPlace</h2>
@@ -103,14 +103,14 @@ const OldMutualSupplierLandingPage = () => {
                   alt=""
                   className="supplyimage1-oldmutual"
                 />
-                <img
+                {/* <img
                   src={oldmutual1}
                   alt=""
                   className="supplyimage2-oldmutual"
-                />
+                /> */}
               </div>
-              <div className="Supplier-steps oldmutualsuppliersteps">
-                <h4>Becomme A Supplier in Three Steps</h4>
+              <div className="oldmutualsuppliersteps">
+                <h4>Become A Supplier in Three Steps</h4>
                 <ul>
                   <li>
                     <p>
@@ -177,7 +177,7 @@ const OldMutualSupplierLandingPage = () => {
         <div className="oldmutual-complianceExclusion-box">
           <div className="container">
             <div className="oldmutual-compliance-exclusion">
-              <div className="prooduct-exclusion-container oldmutualexclusioncontainer">
+              <div className="oldmutualexclusioncontainer">
                 <h3>Our Supplier Complainces</h3>
                 <div className="product-exclusion oldmutualexclusion">
                   <div className="product-exclusion-text">
@@ -195,9 +195,9 @@ const OldMutualSupplierLandingPage = () => {
                 </div>
               </div>
 
-              <div className="prooduct-exclusion-container  oldmutualexclusioncontainer">
+              <div className="oldmutualexclusioncontainer">
                 <h3>Our Product Exclusions</h3>
-                <div className="product-exclusion oldmutualexclusion">
+                <div className="oldmutualexclusion">
                   <div className="product-exclusion-text">
                     <p>
                       Certain products are prohibited from being listed on the
@@ -217,7 +217,7 @@ const OldMutualSupplierLandingPage = () => {
         </div>
         <div className="oldmutual-right-marketplace">
           <div className="container">
-            <div className="oldmutual-right-marketplace-title">
+            <div className="rm-pricing-title">
               <h2>Use the supplier’s Marketplace the right way</h2>
               <p>
                 Learn the essential ways to successfully maximize the

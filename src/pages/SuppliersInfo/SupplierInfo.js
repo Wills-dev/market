@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SupplierInfo.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -12,8 +12,27 @@ import ProductImg2 from "../../assets/img/spi2.png";
 import ProductImg3 from "../../assets/img/spi3.png";
 import ProductImg4 from "../../assets/img/spi4.png";
 import ProductImg5 from "../../assets/img/spi5.png";
+import thumbnail1 from "../../assets/img/thumbnail1.png";
+import thumbnail2 from "../../assets/img/thumbnail2.png";
+import thumbnail3 from "../../assets/img/thumbnail3.png";
 
 const SupplierInfo = () => {
+  const TabItems = [
+    {
+      title: "Company Summary",
+      icon: <CgDanger />,
+    },
+    {
+      title: "Certifications & Awards",
+      icon: <CgDanger />,
+    },
+    {
+      title: "Top Transactions",
+      icon: <AiFillLock />,
+    },
+  ];
+  const [active, setActive] = useState(0);
+
   return (
     <>
       <Header />
@@ -26,30 +45,41 @@ const SupplierInfo = () => {
                 <BiArrowBack /> Browse Product
               </button>
               <div className="Browse-product-info-container">
-                <div className="Browse-Product-image">
-                  <img src={brosweproduct} alt="" />
+                <div className="">
+                  <div className="Browse-Product-image">
+                    <img src={brosweproduct} alt="" className="d-block w-100" />
+                  </div>
+                  {/* <div className="thumbnail-images">
+                    <img src={thumbnail1} alt="..." />
+                    <img src={thumbnail2} alt="..." />
+                    <img src={thumbnail3} alt="..." />
+                    <img src={thumbnail1} alt="..." />
+                    <img src={thumbnail2} alt="..." />
+                  </div> */}
                 </div>
-                <div className="Browse-Product-info">
-                  <div className="">
-                    <div className="browse-info-details">
-                      <p>Company Name</p>
-                      <h6>Fusion & Co Traders</h6>
-                    </div>
-                    <div className="browse-info-details">
-                      <p>Email Address</p>
-                      <h6>ErhunAbbe123@outlook.com</h6>
-                    </div>
-                    <div className="browse-info-details">
-                      <p>Phone Number</p>
-                      <h6>+234-814694-3456</h6>
-                    </div>
-                    <div className="browse-info-details">
-                      <p>Country</p>
-                      <h6>Nigeria</h6>
-                    </div>
-                    <div className="browse-info-details">
-                      <p>Products Listed</p>
-                      <h6>12</h6>
+                <div className="Browse-Product-info-box">
+                  <div className="Browse-Product-info">
+                    <div className="">
+                      <div className="browse-info-details">
+                        <p>Company Name</p>
+                        <h6>Fusion & Co Traders</h6>
+                      </div>
+                      <div className="browse-info-details">
+                        <p>Email Address</p>
+                        <h6>ErhunAbbe123@outlook.com</h6>
+                      </div>
+                      <div className="browse-info-details">
+                        <p>Phone Number</p>
+                        <h6>+234-814694-3456</h6>
+                      </div>
+                      <div className="browse-info-details">
+                        <p>Country</p>
+                        <h6>Nigeria</h6>
+                      </div>
+                      <div className="browse-info-details">
+                        <p>Products Listed</p>
+                        <h6>12</h6>
+                      </div>
                     </div>
                   </div>
                   <div className="browse-info-buttons">
@@ -63,26 +93,16 @@ const SupplierInfo = () => {
             <div className="Company-information-container">
               <div className="container">
                 <div className="Company-information-box">
-                  <ul className="all-information">
-                    <li className="Company-info active">
-                      <Link to="">
-                        Company Summary
-                        <CgDanger style={{ color: "#D92727" }} />
-                      </Link>
-                    </li>
-                    <li className="Company-info">
-                      <Link to="">
-                        Certifications and Award{" "}
-                        <CgDanger style={{ color: "#D92727" }} />
-                      </Link>
-                    </li>
-                    <li className="Company-info">
-                      <Link to="">
-                        Top Transactions{" "}
-                        <AiFillLock style={{ color: "#D92727" }} />
-                      </Link>
-                    </li>
-                  </ul>
+                  {TabItems.map((tabItem, i) => (
+                    <ul className="all-information" key={i}>
+                      <li className="Company-info">
+                        {tabItem.title}
+                        <span style={{ color: "#D92727", marginLeft: "10px" }}>
+                          {tabItem.icon}
+                        </span>
+                      </li>
+                    </ul>
+                  ))}
                 </div>
 
                 <div className="Description">
@@ -118,9 +138,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -131,9 +151,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -144,9 +164,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -157,9 +177,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -170,9 +190,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -183,48 +203,24 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
                     </div>
+                  
+                
                     <div className="product-card">
                       <div className="product-card-img">
                         <img src={ProductImg2} className="" alt="..." />
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg2} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg2} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -235,9 +231,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -248,9 +244,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>
@@ -261,64 +257,9 @@ const SupplierInfo = () => {
                       </div>
                       <div className="product-card-info">
                         <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg4} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg4} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg4} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg5} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="product-name">Java Peanuts</h2>
-                        <p className="product-price">
-                          <span className="p-currency">USD</span> 500 - 600{" "}
+                        <h2 className="Lp-product-name">Java Peanuts</h2>
+                        <p className="Lp-product-price">
+                          <span className="Lp-currency">USD</span> 500 - 600{" "}
                           <span className="p-unit">/MT</span>
                         </p>
                       </div>

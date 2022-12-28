@@ -24,7 +24,7 @@ const AllCategories = () => {
           <div className="categories-cat-list">
             <div className="container">
               <ul className="product-cat-list">
-                <li className="product-cat active">
+                <li className="product-cat allcatactive">
                   <Link>
                     Filter{" "}
                     <span>

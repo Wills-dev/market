@@ -47,7 +47,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/all-product" element={<ProductListing />} />
-
           <Route path="/authentication" element={<Authentication />} />
           <Route path="/buyers-registration" element={<BuyersRegistration />} />
           <Route
@@ -58,21 +57,18 @@ function App() {
           <Route path="/allCategories" element={<AllCategories />} />
           <Route path="/allCategoriestwo" element={<AllCategoriestwo />} />
           <Route
-            path="/Oldmutual-Supplier-LandingPage"
+            path="/oldmutual-Supplier-LandingPage"
             element={<OldmutualSupplierLandingPage />}
           />
           <Route
             path="/oldmutual-Supplier-main-LandingPage"
             element={<OldMutualSupplierMainLandingPage />}
           />
-
           <Route
             path="/sellers-landing-page"
             element={<SellersLandingPage />}
           />
-
           <Route path="/Supplier-info" element={<SupplierInfo />} />
-
           <Route path="/phone-verification" element={<PhoneVerification />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route
@@ -80,7 +76,6 @@ function App() {
             element={<ResetPassword />}
           />
           <Route path="/login" element={<Login />} />
-
           <Route path="/buyer/dashboard" element={<BuyersDashboard />} />
           <Route
             path="/buyer/message-center"

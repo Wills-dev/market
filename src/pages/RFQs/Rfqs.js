@@ -24,94 +24,130 @@ const Rfqs = () => {
             <div className="rfq-cards">
               <div className="rfq-list-wrap">
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
                 <div className="rfq-list-box">
-                  <h2>Dried Split Ginger</h2>
-                  <h3>Quantity: 200 Metric Tonnes</h3>
-                  <p>
-                    Date created: Mon 15th Aug, 2022
-                    <span>
-                      <Link onClick={handleShow}>View details</Link>
-                    </span>
-                  </p>
+                  <h2>Cameroon WW32 Peanuts</h2>
+                  <p>Mrs, Guyelen mayenga</p>
+
+                  <div className="rfq-list-btmitems">
+                    <p>Quantity: 200 Metric Tonnes</p>
+                    <p>
+                      Date created: Mon 15th Aug, 2022
+                      <span>
+                        <Link onClick={handleShow}>View details</Link>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="response-quote">
@@ -126,94 +162,130 @@ const Rfqs = () => {
               <div className="rfq-cards">
                 <div className="rfq-list-wrap">
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                   <div className="rfq-list-box">
-                    <h2>Dried Split Ginger</h2>
-                    <h3>Quantity: 200 Metric Tonnes</h3>
-                    <p>
-                      Date created: Mon 15th Aug, 2022
-                      <span>
-                        <Link onClick={handleShow}>View details</Link>
-                      </span>
-                    </p>
+                    <h2>Cameroon WW32 Peanuts</h2>
+                    <p>Mrs, Guyelen mayenga</p>
+
+                    <div className="rfq-list-btmitems">
+                      <p>Quantity: 200 Metric Tonnes</p>
+                      <p>
+                        Date created: Mon 15th Aug, 2022
+                        <span>
+                          <Link onClick={handleShow}>View details</Link>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -243,12 +315,12 @@ const Rfqs = () => {
                     <p>Quantity:</p>
                     <h5>40 Tonnes</h5>
                   </div>
-                  <div>
-                    <p>Country Of Destination:</p>
+                  <div className="cod">
+                    <p>Country of Destination:</p>
                     <h5>Cameroon</h5>
                   </div>
                 </div>
-                <p>Specifications::</p>
+                <p>Specifications:</p>
                 <h5>WW180, 47 KOR</h5>
                 <p>Requirements:</p>
                 <h5>I need to get the best quality cashew kernels urgently</h5>

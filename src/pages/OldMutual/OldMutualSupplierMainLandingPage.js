@@ -5,6 +5,7 @@ import { MdDownloadForOffline } from "react-icons/md";
 import HeroImg2 from "../../assets/img/hero-img2.png";
 import Button from "react-bootstrap/Button";
 import { BsFillXDiamondFill } from "react-icons/bs";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import "./OldMutual.css";
 import suppliercompliance from "../../assets/img/supplierCompliance.png";
 import becomeseller from "../../assets/img/steven-cleghorn-psomVjxL29Y-unsplash.jpg";
@@ -52,28 +53,52 @@ const OldMutualSupplierMainLandingPage = () => {
           <h4>Why Join the MarketPlace</h4>
           <div className="main-why-sell">
             <div className="main-why-sell-content">
-              <h5>Secured Trade</h5>
+              <h5>
+                <AiOutlineLoading3Quarters
+                  size={12}
+                  style={{ color: "#8DC63F", marginRight: "10px" }}
+                />
+                Secured Trade
+              </h5>
               <p>
                 TOFA is the safest and most trusted trading platform in Africa.
                 We ensures safety & security of buyers and sellers.
               </p>
             </div>
             <div className="main-why-sell-content">
-              <h5>Low Commissions</h5>
+              <h5>
+                <AiOutlineLoading3Quarters
+                  size={12}
+                  style={{ color: "#8DC63F", marginRight: "10px" }}
+                />
+                Low Commissions
+              </h5>
               <p>
                 Our commission fees are as low as 5%, and you only pay when you
                 successfully sell your product on the marketplace.
               </p>
             </div>
             <div className="main-why-sell-content">
-              <h5>24/7 Support</h5>
+              <h5>
+                <AiOutlineLoading3Quarters
+                  size={12}
+                  style={{ color: "#8DC63F", marginRight: "10px" }}
+                />
+                24/7 Support
+              </h5>
               <p>
                 We provide various tools to increase your success including: a
                 personalised dashboard and our dedicated support team.
               </p>
             </div>
             <div className="main-why-sell-content">
-              <h5>Diverse Network</h5>
+              <h5>
+                <AiOutlineLoading3Quarters
+                  size={12}
+                  style={{ color: "#8DC63F", marginRight: "10px" }}
+                />
+                Diverse Network
+              </h5>
               <p>
                 Network with over 16,000 Sellers across Africa and over 1
                 million + buyers from all over the world when you sign up.

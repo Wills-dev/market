@@ -46,7 +46,7 @@ const SellersLandingPage = () => {
                       className="sellerlanding1"
                     />
                   </div>
-                  <div className="Sld-sideimagetwo">
+                  {/* <div className="Sld-sideimagetwo">
                     <img
                       src={sellerlanding2}
                       alt=""
@@ -57,7 +57,7 @@ const SellersLandingPage = () => {
                       alt=""
                       className="sellerlanding3"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ const SellersLandingPage = () => {
           <div className="why-sell">
             <div className="container">
               <div className="Why-sell-title">
-                <h2>Why Sell on MarketPlace</h2>
+                <h2>Why Sell on The Marketplace?</h2>
                 <p>
                   Learn the basics, Here's what you need to know to start
                   selling.
@@ -199,7 +199,7 @@ const SellersLandingPage = () => {
                     <h6>Premium Plan</h6>
                     <p>The perfect Plan for Ease</p>
                     <h5>
-                      $40 <span>/Month</span> - $50<span>/Quater</span>
+                      <span> $40</span>/Month - <span>$50</span>/Quater
                     </h5>
                     <p>Billed per month or Quaterly</p>
                     <div className="plans-button">
@@ -256,7 +256,9 @@ const SellersLandingPage = () => {
                     </div>
                   </div>
                   <div className="download-pdf">
-                    <MdDownloadForOffline style={{ color: "#979797" }} />
+                    <span>
+                      <MdDownloadForOffline style={{ color: "#979797" }} />
+                    </span>
                     <p>Download the Supplier Complainces.pdf</p>
                   </div>
                 </div>
@@ -283,7 +285,7 @@ const SellersLandingPage = () => {
           </div>
           <div className="right-marketplace">
             <div className="container">
-              <div className="plans-pricing-title">
+              <div className="rm-pricing-title">
                 <h2>Use the supplier’s Marketplace the right way</h2>
                 <p>
                   Learn the essential ways to successfully maximize the

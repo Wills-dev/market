@@ -6,7 +6,12 @@
   margin: 40px 0;
 }
 .product-cat-list{
-  padding: 40px 0;
+  padding: 40px;
+}
+.product-cat-list .product-cat.allcatactive a:hover{
+    border-color: #DC4D04;
+    font-weight: 600;
+    color: #DC4D04;
 }
 .categories-card-img {
   background: #e5e6e3;
@@ -36,8 +41,14 @@ color: #5C5C5C;
   grid-template-columns: 1fr ;
  
 }
-.categoties-card{
+.categories-card-img {
+
   width: 100%;
+  height: auto;
+}
+.categories-card-img  img{
+height: auto;
+width:100%;
 }
 }
 
