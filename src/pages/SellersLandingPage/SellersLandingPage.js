@@ -10,6 +10,8 @@ import supplier2 from "../../assets/img/supplier2.png";
 import supplier3 from "../../assets/img/supplier3.png";
 import "./SellersLandingPage.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { TbGridDots } from "react-icons/tb";
+import { RxDragHandleDots2 } from "react-icons/rx";
 import { AiOutlineCheck } from "react-icons/ai";
 import { MdDownloadForOffline } from "react-icons/md";
 import { AiOutlinePlayCircle } from "react-icons/ai";
@@ -38,26 +40,34 @@ const SellersLandingPage = () => {
                   <Button className="changepassword">Register Now</Button>
                 </div>
 
-                <div className="seller-landing-images">
-                  <div className="Sld-sideimageone">
-                    <img
-                      src={sellerlanding1}
-                      alt=""
-                      className="sellerlanding1"
-                    />
+                <div className="seller-landing-images-container">
+                  <div className="seller-landing-images">
+                    <div className="Sld-sideimageone">
+                      <div className="sellerlandingdots">
+                        <TbGridDots size={80} style={{ color: "#B4E1FF" }} />
+                        <TbGridDots size={80} style={{ color: "#B4E1FF" }} />
+                      </div>
+
+                      <img
+                        src={sellerlanding1}
+                        alt=""
+                        className="sellerlandingimg"
+                      />
+                      <div className="sellerlandingdotstwo">
+                        <TbGridDots size={80} style={{ color: "#FFBD9B" }} />
+                      </div>
+                    </div>
+                    <div className="Sld-sideimagetwo">
+                      <div className="sellerlandingone">
+                        <img src={sellerlanding3} alt="" />
+                      </div>
+                    
+
+                      <div className="sellerlandingtwo">
+                        <img src={sellerlanding2} alt="" />
+                      </div>
+                    </div>
                   </div>
-                  {/* <div className="Sld-sideimagetwo">
-                    <img
-                      src={sellerlanding2}
-                      alt=""
-                      className="sellerlanding2"
-                    />
-                    <img
-                      src={sellerlanding3}
-                      alt=""
-                      className="sellerlanding3"
-                    />
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -114,10 +124,16 @@ const SellersLandingPage = () => {
             <div className="container">
               <h2>Want To Become A Supplier?</h2>
               <div className="become-supplier-container">
-                <div className="Supplier-image">
-                  <img src={supplier1} alt="" className="supplyimage1" />
-                  <img src={supplier3} alt="" className="supplyimage2" />
-                  <img src={supplier2} alt="" className="supplyimage3" />
+                <div className="supplier-image">
+                  <div className="supplier1">
+                    <img src={supplier1} alt="" />
+                  </div>
+                  <div className="supplier2">
+                    <img src={supplier2} alt="" />
+                  </div>
+                  <div className="supplier3">
+                    <img src={supplier3} alt="" />
+                  </div>
                 </div>
                 <div className="Supplier-steps">
                   <ul>
