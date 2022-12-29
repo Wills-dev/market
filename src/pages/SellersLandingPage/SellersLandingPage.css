@@ -4,10 +4,11 @@
 
 .seller-landing-register {
   background-color: #fff;
+  padding: 40px 0;
 }
 .seller-landing-register-box {
   display: flex;
-  padding: 40px 0;
+  padding-bottom: 150px;
 }
 
 .seller-landing-connect h2 span {
@@ -26,16 +27,46 @@
   line-height: 26px;
   color: rgba(0, 0, 0, 0.8);
 }
-
-.seller-landing-images {
-  display: flex;
-  width: 50%;
-}
-.seller-landing-connect-images img {
+.seller-landing-images-container{
   width: 100%;
-  height: auto;
+}
+.seller-landing-images{
+ width: 100%;
+ display: flex;
+ position: relative;
+}
+.sellerlandingimg{
+  margin: -50px 0px -30px 0px;
+
+}
+.Sld-sideimageone{
+
+  position: absolute;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+  
+  
+}
+.Sld-sideimagetwo{
+  position: absolute;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+
 }
 
+.sellerlandingdotstwo{
+  z-index:-1;
+
+margin-left: 100px;
+}
+
+.sellerlandingtwo{
+  margin-top: -50px;
+
+}
 .seller-landing-connect button,
 .become-supplier button {
   background: #dc4d04;
@@ -112,18 +143,21 @@ color: #000000;
   display: flex;
   flex-direction: row-reverse;
 }
-.Supplier-image {
+.supplier-image {
   position: relative;
 }
-.supplyimage1 {
+.supplier1{
+padding: 40px;
+}
+.supplier2{
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 5%;
 }
-.supplyimage2 {
+.supplier3{
   position: absolute;
-  top: 150px;
-  left: 350px;
+  bottom: 0;
+  right: 18%;
 }
 .plans-pricing {
   padding: 50px 0;
@@ -324,4 +358,26 @@ color: rgba(40, 40, 40, 0.81);
     top: 30%;
     width: 200px;
   }
+ 
+  .supplier1{
+margin-top: 40px;
+padding: 0;
+}
+  .supplier2{
+  position: absolute;
+  top: 0;
+  left: 2%;
+}
+.supplier3{
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+}
+.Supplier-steps ul {
+
+    margin-top: 20px;
+}
+.seller-landing-images-container{
+  padding-bottom: 250px;
+}
 }

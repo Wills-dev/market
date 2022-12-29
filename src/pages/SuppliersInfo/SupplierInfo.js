@@ -49,13 +49,13 @@ const SupplierInfo = () => {
                   <div className="Browse-Product-image">
                     <img src={brosweproduct} alt="" className="d-block w-100" />
                   </div>
-                  {/* <div className="thumbnail-images">
+                  <div className="thumbnail-images">
                     <img src={thumbnail1} alt="..." />
                     <img src={thumbnail2} alt="..." />
                     <img src={thumbnail3} alt="..." />
                     <img src={thumbnail1} alt="..." />
                     <img src={thumbnail2} alt="..." />
-                  </div> */}
+                  </div>
                 </div>
                 <div className="Browse-Product-info-box">
                   <div className="Browse-Product-info">
@@ -238,32 +238,7 @@ const SupplierInfo = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg3} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="Lp-product-name">Java Peanuts</h2>
-                        <p className="Lp-product-price">
-                          <span className="Lp-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="product-card">
-                      <div className="product-card-img">
-                        <img src={ProductImg4} className="" alt="..." />
-                      </div>
-                      <div className="product-card-info">
-                        <h3 className="seller-name">Viet Delta</h3>
-                        <h2 className="Lp-product-name">Java Peanuts</h2>
-                        <p className="Lp-product-price">
-                          <span className="Lp-currency">USD</span> 500 - 600{" "}
-                          <span className="p-unit">/MT</span>
-                        </p>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
                 <div className="response-quote-box">

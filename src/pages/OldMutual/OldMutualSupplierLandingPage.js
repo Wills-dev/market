@@ -9,6 +9,8 @@ import oldmutual1 from "../../assets/img/oldmutual1.png";
 import oldmutual2 from "../../assets/img/oldmutual2.png";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { AiOutlineCheck } from "react-icons/ai";
+import { TbGridDots } from "react-icons/tb";
+import { RxDragHandleDots2 } from "react-icons/rx";
 import { MdDownloadForOffline } from "react-icons/md";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import nicee1 from "../../assets/img/nicee1.png";
@@ -35,14 +37,33 @@ const OldMutualSupplierLandingPage = () => {
                 <Button className="changepassword">Register Now</Button>
               </div>
 
-              <div className="seller-landing-images">
-                <div className="Sld-sideimageone">
-                  <img src={sellerlanding1} alt="" className="sellerlanding1" />
+              <div className="seller-landing-images-container">
+                <div className="seller-landing-images">
+                  <div className="Sld-sideimageone">
+                    <div className="sellerlandingdots">
+                      <TbGridDots size={80} style={{ color: "#B4E1FF" }} />
+                      <TbGridDots size={80} style={{ color: "#B4E1FF" }} />
+                    </div>
+
+                    <img
+                      src={sellerlanding1}
+                      alt=""
+                      className="sellerlandingimg"
+                    />
+                    <div className="sellerlandingdotstwo">
+                      <TbGridDots size={80} style={{ color: "#FFBD9B" }} />
+                    </div>
+                  </div>
+                  <div className="Sld-sideimagetwo">
+                    <div className="sellerlandingone">
+                      <img src={sellerlanding3} alt="" />
+                    </div>
+
+                    <div className="sellerlandingtwo">
+                      <img src={sellerlanding2} alt="" />
+                    </div>
+                  </div>
                 </div>
-                {/* <div className="Sld-sideimagetwo">
-                  <img src={sellerlanding2} alt="" className="sellerlanding2" />
-                  <img src={sellerlanding3} alt="" className="sellerlanding3" />
-                </div> */}
               </div>
             </div>
           </div>
@@ -97,17 +118,18 @@ const OldMutualSupplierLandingPage = () => {
         <div className="oldmutual-become-supplier">
           <div className="container">
             <div className="oldmutual-become-supplier-box">
-              <div className="Supplier-image">
-                <img
-                  src={oldmutual2}
-                  alt=""
-                  className="supplyimage1-oldmutual"
-                />
-                {/* <img
-                  src={oldmutual1}
-                  alt=""
-                  className="supplyimage2-oldmutual"
-                /> */}
+              <div className="old-mutual-supplier-image">
+                <div className="oldmutual1">
+                  <img src={oldmutual2} alt="..." />
+                </div>
+                <div className="oldmutual2">
+                  <img
+                    src={oldmutual1}
+                    alt="..."
+                    width="150px"
+                    height="150px"
+                  />
+                </div>
               </div>
               <div className="oldmutualsuppliersteps">
                 <h4>Become A Supplier in Three Steps</h4>

@@ -324,6 +324,7 @@ const OldMutualSupplierMainLandingPage = () => {
             <p>
               join the safest and most trusted Agri-trading platform in Africa.
             </p>
+            <button className="startselling-button">Start Selling</button>
           </div>
         </div>
       </div>
