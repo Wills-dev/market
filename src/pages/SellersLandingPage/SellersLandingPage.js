@@ -166,7 +166,7 @@ const SellersLandingPage = () => {
             </div>
           </div>
           <div className="plans-pricing">
-            <div className="">
+            <div className="container">
               <div className="plans-pricing-title">
                 <h2>Plans & Pricing</h2>
                 <p>
