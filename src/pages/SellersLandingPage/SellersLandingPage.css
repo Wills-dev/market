@@ -22,50 +22,45 @@
 .seller-landing-connect p {
   margin: 40px 0;
   width: 70%;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.8);
 }
-.seller-landing-images-container{
+
+.seller-landing-images {
   width: 100%;
+  display: flex;
+  position: relative;
 }
-.seller-landing-images{
- width: 100%;
- display: flex;
- position: relative;
-}
-.sellerlandingimg{
+.sellerlandingimg {
   margin: -50px 0px -30px 0px;
-
 }
-.Sld-sideimageone{
-
+.Sld-sideimageone {
   position: absolute;
-   z-index: 1;
-   display: flex;
-   flex-direction: column;
-  
-  
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
-.Sld-sideimagetwo{
+.Sld-sideimagetwo {
   position: absolute;
   left: 180px;
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-
 }
 
-.sellerlandingdotstwo{
-  z-index:-1;
-
-margin-left: 100px;
+.sellerlandingdotstwo {
+  z-index: -1;
+  margin-left: 100px;
 }
 
-.sellerlandingtwo{
+.sellerlandingtwo {
   margin-top: -50px;
-
+}
+.seller-landing-connect {
+  width: 70%;
 }
 .seller-landing-connect button,
 .become-supplier button {
@@ -113,12 +108,9 @@ margin-left: 100px;
   font-size: 16px;
 }
 .Why-sell-text {
-
   font-size: 12px;
-  color:rgba(40, 40, 40, 0.81);
+  color: rgba(40, 40, 40, 0.81);
   font-weight: 500;
-
-
 }
 .become-supplier {
   background: #fff;
@@ -129,10 +121,10 @@ margin-left: 100px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
 }
-.become-supplier  h2{
-font-weight: 700;
-font-size: 30px;
-color: #000000;
+.become-supplier h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
 }
 
 .Supplier-steps p {
@@ -146,15 +138,15 @@ color: #000000;
 .supplier-image {
   position: relative;
 }
-.supplier1{
-padding: 40px;
+.supplier1 {
+  padding: 40px;
 }
-.supplier2{
+.supplier2 {
   position: absolute;
   top: 0;
   left: 5%;
 }
-.supplier3{
+.supplier3 {
   position: absolute;
   bottom: 0;
   right: 18%;
@@ -163,14 +155,13 @@ padding: 40px;
   padding: 50px 0;
   background: #fff;
 }
-.plans-pricing-title h2{
-    font-weight: 800;
-font-size: 36px;
-line-height: 45px;
+.plans-pricing-title h2 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
 }
 .plans-pricing-title {
   text-align: center;
-
 }
 .plan-types {
   display: flex;
@@ -181,22 +172,23 @@ line-height: 45px;
 
 .Basic-plan {
   padding: 20px;
-  width: 35%;
+  width: 25%;
   background: #ffffff;
   border: 1px solid rgba(40, 40, 40, 0.4);
   border-radius: 12px;
   margin-right: 50px;
 }
-.Basic-plan h5,.premium-plan h5 span{
+.Basic-plan h5,
+.premium-plan h5 span {
   font-weight: 800;
-font-size: 26px;
-line-height: 33px;
-color: #000000;
+  font-size: 26px;
+  line-height: 33px;
+  color: #000000;
 }
 .premium-plan {
   border: 1px solid green;
   padding: 20px;
-  width: 35%;
+  width: 25%;
   background: #ffffff;
   border: 1px solid rgba(40, 40, 40, 0.4);
   border-radius: 12px;
@@ -228,11 +220,11 @@ color: #000000;
   font-size: 14px;
   padding: 20px 0;
 }
-.prooduct-exclusion-container h3{
-font-weight: 700;
-font-size: 26px;
-line-height: 38px;
-color: #000000;
+.prooduct-exclusion-container h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  color: #000000;
 }
 
 .compliance-exclusion-box {
@@ -253,9 +245,9 @@ color: #000000;
 .product-exclusion-text {
   margin-left: 20px;
   font-weight: 600;
-font-size: 16px;
-line-height: 32px;
-color: #000000;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
 }
 
 .download-pdf {
@@ -263,8 +255,6 @@ color: #000000;
   display: flex;
   align-items: center;
 }
-
-
 
 .download-pdf p {
   margin-left: 5px;
@@ -276,14 +266,14 @@ color: #000000;
   background-color: #fff;
   padding: 50px 0;
 }
-.rm-pricing-title{
+.rm-pricing-title {
   text-align: center;
 }
-.rm-pricing-title p{
+.rm-pricing-title p {
   font-weight: 400;
-font-size: 14px;
-line-height: 25px;
-color: rgba(40, 40, 40, 0.81);
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(40, 40, 40, 0.81);
 }
 .right-marketplace-image img {
   width: 100%;
@@ -329,7 +319,7 @@ color: rgba(40, 40, 40, 0.81);
   }
   .Basic-plan,
   .premium-plan {
-    width: 100%;
+    width: 70%;
     margin-top: 20px;
   }
   .plan-text {
@@ -346,7 +336,11 @@ color: rgba(40, 40, 40, 0.81);
   .Why-sell-cards {
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
   }
+.why-sell-number{
+  margin: auto !important;
+}
   .supplyimage2 {
     position: absolute;
     top: 150px;
@@ -358,26 +352,32 @@ color: rgba(40, 40, 40, 0.81);
     top: 30%;
     width: 200px;
   }
- 
-  .supplier1{
-margin-top: 40px;
-padding: 0;
-}
-  .supplier2{
-  position: absolute;
-  top: 0;
-  left: 2%;
-}
-.supplier3{
-  position: absolute;
-  bottom: -10%;
-  right: 0%;
-}
-.Supplier-steps ul {
 
+  .supplier1 {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .supplier2 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+  }
+  .supplier3 {
+    position: absolute;
+    bottom: -10%;
+    right: 0%;
+  }
+  .Supplier-steps ul {
     margin-top: 20px;
+  }
+  .seller-landing-images-container {
+    padding-bottom: 250px;
+  }
 }
-.seller-landing-images-container{
-  padding-bottom: 250px;
-}
+@media only screen and (max-width: 1180px) {
+  .Basic-plan,
+  .premium-plan {
+    margin: auto;
+   margin-bottom: 20px;
+  }
 }
