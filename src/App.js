@@ -18,6 +18,7 @@ import AllCategories from "./pages/AllCategories/AllCategories";
 import AllCategoriestwo from "./pages/AllCategories/AllCategoriestwo";
 import OldmutualSupplierLandingPage from "./pages/OldMutual/OldMutualSupplierLandingPage";
 import OldMutualSupplierMainLandingPage from "./pages/OldMutual/OldMutualSupplierMainLandingPage";
+import Unauthorized from "./pages/Unauthorized/Unauthorized";
 
 import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
@@ -40,6 +41,8 @@ import SellersRfqInfo from "./pages/Dashboard/SellersDashboard/SellersRfqInfo";
 import SellersRfqsQuote from "./pages/Dashboard/SellersDashboard/SellersRfqsQuote";
 import SellersProductDescription from "./pages/Dashboard/SellersDashboard/SellersProductDescription";
 
+
+
 function App() {
   return (
     <>
@@ -49,6 +52,7 @@ function App() {
           <Route path="/all-product" element={<ProductListing />} />
           <Route path="/authentication" element={<Authentication />} />
           <Route path="/buyers-registration" element={<BuyersRegistration />} />
+          <Route path="/unauthorized" element={<Unauthorized />} />
           <Route
             path="/sellers-registration"
             element={<SellersRegistration />}
