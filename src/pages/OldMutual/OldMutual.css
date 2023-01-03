@@ -260,16 +260,23 @@ left: 75%;
 .begin-journey-container {
   margin-top: 40px;
 }
-.begin-journey-image img {
-  width: 100%;
-  height: auto;
-}
-.begin-journey-container {
+.begin-journey-box{
   position: relative;
 }
+.begin-journey-image{
+  height: 500px;
+
+}
+.begin-journey-image img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+}
+
 .begin-journey-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 30%;
   text-align: center;
   font-size: 16px;
@@ -344,9 +351,10 @@ width: 100%;
 .begin-journey-content {
   position: absolute;
   top: 30%;
-  left: 0%;
+  left:0%;
 
 }
+
 .begin-journey-footer-box {
   display: flex;
   background: #fff;
@@ -365,3 +373,4 @@ left: 60%;
   width: 100%;
 }
 }
+

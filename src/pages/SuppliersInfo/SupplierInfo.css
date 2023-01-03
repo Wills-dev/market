@@ -143,6 +143,9 @@ color: #DD4F05 !important;
   border-radius: 4px;
   padding: 5px 20px;
 }
+.sinfo{
+  color: #DD4F05 !important;
+}
 @media only screen and (max-width: 1200px) {
   .Browse-product-info-container {
     display: flex;
