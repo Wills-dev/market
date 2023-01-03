@@ -6,24 +6,38 @@ import HeroImg2 from "../../assets/img/hero-img2.png";
 import Button from "react-bootstrap/Button";
 import { BsFillXDiamondFill } from "react-icons/bs";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "./OldMutual.css";
+import { Iconly } from "react-iconly";
 import suppliercompliance from "../../assets/img/supplierCompliance.png";
 import becomeseller from "../../assets/img/steven-cleghorn-psomVjxL29Y-unsplash.jpg";
-import productimg1 from "../../assets/img/Produtimageveg.png";
-import productimg2 from "../../assets/img/Produtimageveg.png";
-import productimg3 from "../../assets/img/Produtimagenut.png";
-import productimg4 from "../../assets/img/Produtimageherb.png";
-import productimg5 from "../../assets/img/Produtimageoil.png";
-import productimg6 from "../../assets/img/Produtimagegrain.png";
-import featured1 from "../../assets/img/featured1.png";
-import featured2 from "../../assets/img/featured2.png";
-import featured3 from "../../assets/img/featured3.png";
-import featured4 from "../../assets/img/featured4.png";
-import featured5 from "../../assets/img/featured5.png";
-import featured6 from "../../assets/img/featured6.png";
+import CatImg from "../../assets/img/veg.png";
+import CatImg2 from "../../assets/img/fruits.jpg";
+import CatImg3 from "../../assets/img/nuts-seeds.jpg";
+import CatImg4 from "../../assets/img/herbs-spices.jpg";
+import CatImg5 from "../../assets/img/grain-cereal.jpg";
+import CatImg6 from "../../assets/img/oil.jpg";
+import ProductImg from "../../assets/img/spi.png";
+import ProductImg2 from "../../assets/img/spi2.png";
+import ProductImg3 from "../../assets/img/spi3.png";
+import ProductImg4 from "../../assets/img/spi4.png";
+import ProductImg5 from "../../assets/img/spi5.png";
 import journey from "../../assets/img/alex-hudson-m3I92SgM3Mk-unsplash.jpg";
 
 const OldMutualSupplierMainLandingPage = () => {
+  
+  const ref = React.useRef(null);
+
+  const ref1 = React.useRef(null);
+
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
+
+  const scroll2 = (scrollOffset) => {
+    ref1.current.scrollLeft += scrollOffset;
+  };
+
   return (
     <>
       <Header />
@@ -185,132 +199,264 @@ const OldMutualSupplierMainLandingPage = () => {
         </div>
       </div>
       <div className="oldmutual-explore-categories">
-        <div className="container">
-          <div className="explore-cat-box">
-            <div className="explore-cat-box-heading">
-              <p>Explore Categories</p>
-              <button>All Categories</button>
+        <section id="popular-cat">
+          <div className="container">
+            <div className="section-head">
+              <h2>Popular Categories</h2>
             </div>
-            <div className="explore-cat-box-images">
-              <div className="explore-cat-box-image">
-                <img src={productimg1} alt="..." />
-                <p>Fruits</p>
-              </div>
-              <div className="explore-cat-box-image">
-                <img src={productimg2} alt="..." />
-                <p>Vegetables</p>
-              </div>
-              <div className="explore-cat-box-image">
-                <img src={productimg3} alt="..." />
-                <p>Nut & seeds</p>
-              </div>
-              <div className="explore-cat-box-image">
-                <img src={productimg4} alt="..." />
-                <p>Herbs & Spice</p>
-              </div>
-              <div className="explore-cat-box-image">
-                <img src={productimg5} alt="..." />
-                <p>Oil & Fats</p>
-              </div>
-              <div className="explore-cat-box-image">
-                <img src={productimg6} alt="..." />
-                <p>Grain & Cereal</p>
-              </div>
+            <div className="cat-wrap">
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg2} className="" alt="..." />
+                  <h3>Fruits</h3>
+                </div>
+              </Link>
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg} className="" alt="..." />
+                  <h3>Vegetables</h3>
+                </div>
+              </Link>
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg3} className="" alt="..." />
+                  <h3>Vegetables</h3>
+                </div>
+              </Link>
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg4} className="" alt="..." />
+                  <h3>Herbs & Spices</h3>
+                </div>
+              </Link>
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg6} className="" alt="..." />
+                  <h3>Fats & Oil</h3>
+                </div>
+              </Link>
+              <Link>
+                <div className="cat-box">
+                  <img src={CatImg5} className="" alt="..." />
+                  <h3>Grains & Cereal</h3>
+                </div>
+              </Link>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <div className="oldmutual-featured-product">
-        <div className="container">
-          <div className="feature-prod-box">
-            <div className="featured-prod-box-heading">
-              <p>Featured Products</p>
-              <button>View More</button>
+        <section id="featured-products">
+          <div className="container">
+            <div className="section-head">
+              <h2>Featured Products</h2>
+              <div>
+                <Iconly
+                  onClick={() => scroll(-275)}
+                  className="scroll-icon me-4"
+                  name="ChevronLeft"
+                  set="light"
+                  size="medium"
+                  color="#282828"
+                />
+                <Iconly
+                  onClick={() => scroll(275)}
+                  className="scroll-icon"
+                  name="ChevronRight"
+                  set="light"
+                  size="medium"
+                  color="#282828"
+                />
+              </div>
             </div>
-            <div className="feature-cat-box-images">
-              <div className="feature-cat-box-image">
-                <img src={featured1} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+            <div className="main-container">
+              <div className="p-container" ref={ref}>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg2} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg3} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg4} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg5} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="feature-cat-box-image">
-                <img src={featured2} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
-                </div>
+            </div>
+
+            <div className="section-head">
+              <h2>Popular Products</h2>
+              <div>
+                <Iconly
+                  onClick={() => scroll2(-275)}
+                  className="scroll-icon me-4"
+                  name="ChevronLeft"
+                  set="light"
+                  size="medium"
+                  color="#282828"
+                />
+                <Iconly
+                  onClick={() => scroll2(275)}
+                  className="scroll-icon"
+                  name="ChevronRight"
+                  set="light"
+                  size="medium"
+                  color="#282828"
+                />
               </div>
-              <div className="feature-cat-box-image">
-                <img src={featured3} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+            </div>
+            <div className="main-container">
+              <div className="p-container" ref={ref1}>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg3} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="feature-cat-box-image">
-                <img src={featured4} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg5} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="feature-cat-box-image">
-                <img src={featured5} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg4} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="feature-cat-box-image">
-                <img src={featured6} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span>/ MT
-                  </p>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg3} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="feature-cat-box-image">
-                <img src={featured1} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg2} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="feature-cat-box-image">
-                <img src={featured2} alt="..." />
-                <p>Viet Delta</p>
-                <div className="fp-info">
-                  <p>Java Peanuts</p>
-                  <p>
-                    USD <span>500 - 650</span> / MT
-                  </p>
+                <div className="product-card">
+                  <div className="product-card-img">
+                    <img src={ProductImg} className="" alt="..." />
+                  </div>
+                  <div className="product-card-info">
+                    <h3 className="seller-name">Viet Delta</h3>
+                    <h2 className="product-name">Java Peanuts</h2>
+                    <p className="product-price">
+                      <span className="p-currency">USD</span> 500 - 600{" "}
+                      <span className="p-unit">/MT</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <div className="begin-journey-container">
         <div className="container">
@@ -318,13 +464,14 @@ const OldMutualSupplierMainLandingPage = () => {
             <div className="begin-journey-image">
               <img src={journey} alt="..." />
             </div>
-          </div>
-          <div className="begin-journey-content">
-            <h4>Ready to Begin your Journey?</h4>
-            <p>
-              join the safest and most trusted Agri-trading platform in Africa.
-            </p>
-            <button className="startselling-button">Start Selling</button>
+            <div className="begin-journey-content">
+              <h4>Ready to Begin your Journey?</h4>
+              <p>
+                join the safest and most trusted Agri-trading platform in
+                Africa.
+              </p>
+              <button className="startselling-button">Start Selling</button>
+            </div>
           </div>
         </div>
       </div>

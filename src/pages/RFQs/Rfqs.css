@@ -68,7 +68,7 @@
   margin-top: 20px;
   color: rgba(27, 38, 49, 0.65);
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .rfq-list-wrap {
     display: grid;
     grid-template-columns: 1fr;
